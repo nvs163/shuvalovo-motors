@@ -1,12 +1,1 @@
 # shuvalovo-motors
-
-
-
-
-
-
-
-
-
-
-

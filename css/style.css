@@ -2810,7 +2810,7 @@ input::-webkit-input-placeholder {
 	.footer__middle {
 		flex-direction: column;
 	}
-	.footer .menu__item {
+	.footer .footer-menu__item {
 		width: 100%;
 		padding: 15px 0;
 		border-bottom: 1px solid #37434C;
