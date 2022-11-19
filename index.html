@@ -8,10 +8,10 @@
     <title>Шувалово-Моторс</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/jquery-ui.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- Fonts -->
 
 </head>
@@ -141,23 +141,22 @@
         </header><!-- #masthead -->
         
         <main class="main__wrapper">
-            <section class="hero" style="background-image: url('assets/img/bg.png');">
+            <section class="hero">
                 <div class="hero__img">
                     <img class="hero__img-wr" src="assets/img/bg.png" alt="">
                 </div>
                 <div class="container">
                     <div class="hero__wrpapper">
                         <h1 class="hero__title title-h1">
-                            Официальный сервисный центр KIA
+                            Автомобили с пробегом в Санкт-Петербурге
                         </h1>
-                        <div class="hero__subtitle">
-                            Обслуживание и ремонт автомобилей KIA от официального дилера по выгодным ценам
-                        </div>
-                        <div class="hero__text">
-                            Дарим скидку на первое посещение 30%!
-                        </div>
+                        <ul class="hero__list">
+                            <li class="hero__item">Более 1 131 авто с ПТС в наличии</li>
+                            <li class="hero__item">Кредит под 4,9%</li>
+                            <li class="hero__item">Выгода до 590 000</li>
+                        </ul>
                         <button class="hero__button btn1 call_but gopop3" type="button" aria-label="Записаться">
-                            <span class="button__text ">Записаться</span> 
+                            <span class="button__text ">Выбрать автомобиль</span> 
                         </button>
                     </div>
                 </div>
@@ -282,19 +281,7 @@
                 </div>
             </section>
         
-            <section class="info sect-padding">
-                <div class="container">
-                    <div class="info__wr d-flex">
-                        <div class="info__title">
-                            <p>Не нашли нужную услугу?</p>
-                            <p>Свяжитесь с нами и мы подберём индивидуальное решение.</p>
-                        </div>
-                        <button class="info__button btn1 gopop3" type="button" aria-label="Связаться">
-                            <span class="button__text">Связаться</span> 
-                        </button>
-                    </div>
-                </div>
-            </section>
+
         
             <section class="stock sect-padding">
                 <div class="container">
@@ -374,46 +361,61 @@
                 </div>
             </section>
         
-            <section class="info info__two sect-padding">
-                <div class="container">
-                    <div class="info__wr d-flex">
-                        <div class="info__title">
-                            <p>Онлайн запись</p>
-                            <p>на сервис в автоцентр Kia Шувалово-Моторс в СПб на Выборгском шоссе, 31а</p>
-                        </div>
-                        <button class="info__button btn1 gopop" type="button" aria-label="Связаться">
-                            <span class="button__text">Записаться на сервис</span> 
-                        </button>
-                    </div>
-                </div>
-            </section>
         
             <section class="count sect-padding">
                 <div class="container">
-                    <div class="count__items">
-                        <div class="count__item">
-                            <div class="count__title">
-                                Калькулятор технического обслуживания
-                            </div>
-                            <div class="count__text">
-                                Мы постоянно совершенствуем технологии обслуживания, 
-                                чтобы обеспечить вам качественные материалы и сервис по привлекательным ценам
-                            </div>
+                    <ul class="count__items">
+
+                        <li class="count__item">
+                            <h3 class="count__title">
+                                Специальные условия страхования КАСКО
+                            </h3>
+                            <p class="count__text">
+                                Мы предлагаем эксклюзивные условия по страхованию автомобиля. Сотрудничаем с ведущими страховыми компаниями на рынке, чтобы обеспечить самую надёжную защиту автомобиля.
+                            </p>
                             <button class="count__button btn1" type="button" aria-label="Связаться">
-                                <span class="button__text">Рассчитать стоимость ТО</span>
+                                <span class="button__text">Подробнее</span>
                             </button>
-                        </div>
-                        <div class="count__item">
-                            <div class="count__title">
-                                Калькулятор малярно-кузовных работ
-                            </div>
-                            <div class="count__text">
-                                Мы осуществляем профессиональный кузовной ремонт автомобилей любой сложности и гарантируем качество и приемлемые сроки выполнения работы
-                            </div>
+                        </li>
+
+                        <li class="count__item">
+                            <h3 class="count__title">
+                                Купить автомобиль, используя Trade-In
+                            </h3>
+                            <p class="count__text">
+                                Предоставляет своим клиентам возможность приобретения автомобилей по системе Trade-in. Мы принимаем в зачёт практически любые автомобили.
+                            </p>
                             <button class="count__button btn1" type="button" aria-label="Связаться">
-                                <span class="button__text">Рассчитать стоимость работ</span>
+                                <span class="button__text">Подробнее</span>
                             </button>
+                        </li>
+
+                        <li class="count__item">
+                            <h3 class="count__title">
+                                Автомобиль в кредит с одобрением в 96% случаев
+                            </h3>
+                            <p class="count__text">
+                                Предлагаются разные кредитные программы на приобретение автомобилей, в рамках которых возможно получить автомобиль по сниженной ставке от 8,9% годовых, не посещая отделения банка.
+                            </p>
+                            <button class="count__button btn1" type="button" aria-label="Связаться">
+                                <span class="button__text">Подробнее</span>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="info sect-padding">
+                <div class="container">
+                    <div class="info__wr d-flex">
+                        <div class="info__inner">
+                            <h3 class="info__title">Выкуп авто в день обращения</h3>
+                            <p class="info__text">Мы предлагаем выкуп автомобилей с пробегом, при котором всю сумму вы получаете сразу после заключения сделки по автовыкупу.</p>
                         </div>
+                        <button class="info__button btn1 gopop3" type="button" aria-label="Связаться">
+                            <span class="button__text">Подробнее</span> 
+                        </button>
                     </div>
                 </div>
             </section>
@@ -421,83 +423,78 @@
             <section class="advan">
                 <div class="container">
                     <div class="advan__title title-h2">
-                        Преимущества сервисного центра
+                        Преимущества Шувалово-Моторс
                     </div>
-                    <div class="advan__items">
-                        <div class="advan__item d-flex">
+                    <ul class="advan__items">
+                        <li class="advan__item d-flex">
                             <img class="shake" src="assets/icon/icon1.png" alt="">
                             <div class="advan__item-right">
-                                <div class="advan__name title-h3">
-                                    Оперативность работы
-                                </div>
-                                <div class="advan__text ">
-                                    Запись клиента на сервис в день обращения, ремонт и обслуживание — в кратчайшие сроки. 
-                                    Мы ценим время своих клиентов!
-                                </div>
+                                <h3 class="advan__name title-h3">
+                                    Безопасно
+                                </h3>
+                                <p class="advan__text ">
+                                    Все автомобили проверяются мастерами сервисного центра и проходят предпродажную подготовку
+                                </p>
                             </div>
-                        </div>
-                        <div class="advan__item d-flex">
+                        </li>
+                        <li class="advan__item advan__item--two d-flex">
                             <img class="shake" src="assets/icon/icon2.png" alt="">
                             <div class="advan__item-right">
-                                <div class="advan__name title-h3">
-                                    Сертифицированное оборудование
-                                </div>
-                                <div class="advan__text ">
-                                    Сервис Kia использует профессиональный инструмент, рекомендованный КМР, 
-                                    что позволяет обслуживать авто на гарантии
-                                </div>
+                                <h3 class="advan__name title-h3">
+                                    Удобные способы оплаты
+                                </h3>
+                                <p class="advan__text ">
+                                    Наличные, кредит, безнал, Trade-in
+                                </p>
                             </div>
-                        </div>
-                        <div class="advan__item d-flex">
+                        </li>
+                        <li class="advan__item d-flex">
                             <img class="shake" src="assets/icon/icon3.png" alt="">
                             <div class="advan__item-right">
-                                <div class="advan__name title-h3">
-                                    Квалифицированный персонал
-                                </div>
-                                <div class="advan__text ">
-                                    Все работники Шувалово-Моторс имеют профессиональное образование и 
-                                    регулярно повышают квалификацию в академии Киа
-                                </div>
+                                <h3 class="advan__name title-h3">
+                                    Быстрый трейд-ин
+                                </h3>
+                                <p class="advan__text ">
+                                    Зачёт вашего автомобиля и подбор нового в день обращения
+                                </p>
                             </div>
-                        </div>
-                        <div class="advan__item d-flex">
+                        </li>
+                        <li class="advan__item d-flex">
                             <img class="shake" src="assets/icon/icon4.png" alt="">
                             <div class="advan__item-right">
-                                <div class="advan__name title-h3">
-                                    Оперативность работы
-                                </div>
-                                <div class="advan__text ">
+                                <h3 class="advan__name title-h3">
+                                    Честный кредит
+                                </h3>
+                                <p class="advan__text ">
                                     Запись клиента на сервис в день обращения, ремонт и обслуживание — в кратчайшие сроки. 
                                     Мы ценим время своих клиентов!
-                                </div>
+                                </p>
                             </div>
-                        </div>
-                        <div class="advan__item d-flex">
+                        </li>
+                        <li class="advan__item d-flex">
                             <img class="shake" src="assets/icon/icon5.png" alt="">
                             <div class="advan__item-right">
-                                <div class="advan__name title-h3">
-                                    Оперативность работы
-                                </div>
-                                <div class="advan__text ">
-                                    Запись клиента на сервис в день обращения, ремонт и обслуживание — в кратчайшие сроки. 
-                                    Мы ценим время своих клиентов!
-                                </div>
+                                <h3 class="advan__name title-h3">
+                                    Оригинальные аксессуары Киа в наличии и на заказ
+                                </h3>
+                                <p class="advan__text ">
+                                    Широкий ассортимент для расширения границ возможностей вашего автомобиля и внесения в его облик неповторимой индивидуальности
+                                </p>
                             </div>
-                        </div>
-                        <div class="advan__item d-flex">
+                        </li>
+                        <li class="advan__item d-flex">
                             <img class="shake" src="assets/icon/icon6.png" alt="">
                             <div class="advan__item-right">
-                                <div class="advan__name title-h3">
-                                    Оперативность работы
-                                </div>
-                                <div class="advan__text ">
-                                    Запись клиента на сервис в день обращения, ремонт и обслуживание — в кратчайшие сроки. 
-                                    Мы ценим время своих клиентов!
-                                </div>
+                                <h3 class="advan__name title-h3">
+                                    Клиентская зона отдыха
+                                </h3>
+                                <p class="advan__text ">
+                                    Всем клиентам доступна комфортная зона отдыха и кафе с горячими обедами
+                                </p>
                             </div>
-                        </div>
+                        </li>
                         
-                    </div>
+                    </ul>
                 </div>
             </section>
 
@@ -513,12 +510,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -527,12 +524,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -541,12 +538,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -555,12 +552,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -569,12 +566,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -583,12 +580,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -597,12 +594,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -611,12 +608,12 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -625,18 +622,55 @@
                                 <h3 class="reviews__item-name title-h3">
                                     Мария
                                 </h3>
-                                <div class="reviews__item-subname">
+                                <p class="reviews__item-subname">
                                     Soul
-                                </div>
-                                <div class="reviews__item-text">
-                                    Впечатления положительные. Всё очень быстро. Понравилось все.
-                                </div>
+                                </p>
+                                <p class="reviews__item-text">
+                                    Благодарна компании Шувалово-Моторс и в частности менеджеру Самородскому Владиславу за отличный сервис и человеческий подход!На протяжении всего процесса, от выбора автомобиля до выдачи, меня консультировали по всем вопросам.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         
+            <section class="servcentr sect-padding">
+                <div class="container">
+                    <div class="servcentr__wrapper d-flex">
+                        <div class="servcentr__preview">
+                            <div class="servcentr__title title-h2">
+                                Шувалово-Моторс — продажа автомобилей с пробегом в СПб
+                            </div>
+                            <div class="servcentr__img">
+                                <img src="assets/img/preview.png" alt="">
+                            </div>
+                        </div>
+                        <div class="servcentr__info">
+                            
+                            <div class="servcentr__text trr1">
+                                <P>
+                                    Автосалон Киа Шувалово-Моторс» является официальным дилером Kia в Санкт-Петербурге.
+                                </P>
+                                <br>
+                                <P>
+                                    Как дилер Киа автоцентр Шувалово-моторс осуществляет не только продажу новых автомобилей Kia, в том числе в КРЕДИТ, ЛИЗИНГ, по программе Trade-In, но и продажу автомобилей с пробегом и выкуп подержанных автомобилей. А также предоставляет как официальный автосервис Киа следующие виды услуг: 
+                                    техническое обслуживание, гарантийное и сервисное обслуживание, 
+                                    малярно-кузовной ремонт, диагностику и ремонт автомобилей, автострахование ОСАГО, КАСКО и ДАГО, Green Card, диагностические карты, продажа оригинальных запчастей и автоаксессуаров. 
+                                    На официальном сайте дилера Kia kia-shuvalovo.ru представлены все модели, 
+                                    комплектации и цены на новые автомобили Киа 2021 года выпуска. Для посетителей возможна онлайн продажа автомобилей, онлайн-запись на тест-драйв и сервис.
+                                </P>
+                                <br>
+                                <p>
+                                    За годы успешной работы команда квалифицированных менеджеров салона помогла купить новый автомобиль Киа в СПб на выгодных условиях дилера многим автолюбителям. Основными приоритетами для Компании являются профессиональное партнёрство, открытость, эффективная и качественная работа с каждым клиентом.
+                                </p>
+                                
+                            </div>
+                            <button id="btn" class="trr-o">Подробнее</button>   
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="map sect-padding">
                 <div class="container">
                     <div class="map__wrapper d-flex">
@@ -661,43 +695,7 @@
                 </div>
             </section>            
         
-            <section class="servcentr sect-padding">
-                <div class="container">
-                    <div class="servcentr__wrapper d-flex">
-                        <div class="servcentr__preview">
-                            <div class="servcentr__title title-h2">
-                                Шувалово-Моторс официальный сервисный центр Kia в СПб
-                            </div>
-                            <div class="servcentr__img">
-                                <img src="assets/img/preview.png" alt="">
-                            </div>
-                        </div>
-                        <div class="servcentr__info">
-                            
-                            <div class="servcentr__text trr1">
-                                <P>
-                                    Автосалон Киа Шувалово-Моторс» является официальным дилером Kia в Санкт-Петербурге.
-                                </P>
-                                <br>
-                                <P>
-                                    Как дилер Киа автоцентр Шувалово-моторс осуществляет не только продажу новых автомобилей Kia, в том числе в КРЕДИТ, ЛИЗИНГ, по программе Trade-In, но и продажу автомобилей с пробегом и выкуп подержанных автомобилей. А также предоставляет как официальный автосервис Киа следующие виды услуг: 
-                                    техническое обслуживание, гарантийное и сервисное обслуживание, 
-                                    малярно-кузовной ремонт, диагностику и ремонт автомобилей, автострахование ОСАГО, КАСКО и ДАГО, Green Card, диагностические карты, продажа оригинальных запчастей и автоаксессуаров. 
-                                    На официальном сайте дилера Kia kia-shuvalovo.ru представлены все модели, 
-                                    комплектации и цены на новые автомобили Киа 2021 года выпуска. Для посетителей возможна онлайн продажа автомобилей, онлайн-запись на тест-драйв и сервис.
-                                </P>
-                                <br>
-                                <p>
-                                    За годы успешной работы команда квалифицированных менеджеров салона помогла купить новый автомобиль Киа в СПб на выгодных условиях дилера многим автолюбителям. 
-                                    Основными приоритетами для Компании являются профессиональное партнёрство, открытость, эффективная и качественная работа с каждым клиентом.
-                                </p>
-                                
-                            </div>
-                            <button id="btn" class="trr-o">Подробнее</button>   
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </main>
     
         <footer class="footer sect-padding">

@@ -1156,15 +1156,35 @@ body {
 	padding-top: 80px;
 	height: 610px;
     width: 100%;
+	position: relative;
+
 	color: #fff;
+	background-image: url(../assets/img/bg-main-page.jpg);
 	background-position: center;
 	background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(89.27deg, rgba(5, 20, 31, 0.6) 0.59%, rgba(0, 0, 0, 0) 99.35%);
+}
+
+.hero__wrpapper {
+	position: relative;
+	z-index: 1;
+}
+
 .hero__img {
 	display: none;
 }
+
 .hero__title {
 	font-weight: 600;
 	font-size: 50px;
@@ -1172,18 +1192,20 @@ body {
 	margin-bottom: 40px;
 	max-width: 635px;
 }
-.hero__subtitle {
-	font-size: 18px;
-	line-height: 25px;
-	max-width: 635px;
-	margin-bottom: 30px;
+
+.hero__list {
+	margin-bottom: 145px;
 }
-.hero__text {
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 25px;
-	margin-bottom: 135px;
+
+.hero__item {
+	list-style: disc;
+	list-style-position: inside;
 }
+
+.hero__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 .hero__button {
 	font-weight: 600;
 	font-size: 15px;
@@ -1226,13 +1248,30 @@ body {
 /*-------------info-----------*/
 
 .info {
+	margin-bottom: 60px;
 	background: #F8F8F8;
 }
+
+.info__wr {
+	align-items: flex-end;
+}
+
+.info__inner {
+	flex-basis: 840px;
+}
 .info__title {
+	margin-bottom: 20px;
+
+	font-weight: 600;
 	font-size: 25px;
 	line-height: 35px;
-	font-weight: 600;
-	max-width: 729px;
+	color: #05141F;
+}
+
+.info__text {
+	font-size: 15px;
+	line-height: 25px;
+	color: #697279;
 }
 .info__button {
 	color: #FFFFFF;
@@ -1315,25 +1354,26 @@ body {
 }
 .count__items {
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 .count__item {
 	background: #F8F8F8;
 	padding: 60px;
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     min-height: 365px;
 }
 .count__title {
 	font-size: 25px;
 	line-height: 35px;
 	font-weight: 600;
-	max-width: 480px;
+	max-width: 280px;
 	margin-bottom: 10px;
 }
 .count__text {
+	flex-grow: 1;
 	font-size: 15px;
 	line-height: 25px;
 	margin-bottom: 30px;
@@ -1341,7 +1381,7 @@ body {
 .count__button {
 	font-size: 15px;
 	line-height: 20px;
-	width: 500px;
+	width: 100%;
 	height: 60px;
 }
 
@@ -1360,9 +1400,15 @@ body {
 .advan__item {
 	align-items: flex-start;
 }
+
+.advan__item--two {
+	justify-content: flex-start;
+}
+
 .advan__item-right {
 	margin-left: 20px;
 }
+
 .advan__name {
 	margin-bottom: 10px;
 }
@@ -1397,15 +1443,29 @@ body {
 	margin-bottom: 5px;
 }
 .reviews__item-text {
+	max-height: 150px;
+	overflow: hidden;
 	font-size: 15px;
 	line-height: 25px;
+
+	display: -webkit-box;
+	display: box;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-ms-line-clamp: 6;
+	-webkit-line-clamp: 6;
+	line-clamp: 6;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
 }
 
 /*--------map----------*/
 
 .map {
-	padding-top: 90px;
-	padding-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 60px;
 }
 .map__wrapper {
 	align-items: start;
@@ -1414,6 +1474,7 @@ body {
 .map__inf {
 	padding-left: 60px;
 	padding-top: 60px;
+	padding-right: 48px;
 }
 .map__title {
 	font-weight: 600;
@@ -1422,13 +1483,15 @@ body {
 	margin-bottom: 20px;
 }
 .map__subtitle {
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 25px;
 	color: #697279;
 	margin-bottom: 20px;
 }
 .map__tel {
 	position: relative;
+	font-size: 18px;
+	line-height: 25px;
 }
 
 .header__tel-icon {
@@ -1536,7 +1599,6 @@ body {
 }
 
 .trr1 {
-    max-height: 375px;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
 }
@@ -1849,7 +1911,7 @@ ul.breadcrumb li+li:before {
 }
 
 /* /////////////////
-//////Запрос////
+//////Страница благодарности////
 /////////////////// */
 
 .request-page {
@@ -1876,7 +1938,7 @@ ul.breadcrumb li+li:before {
 	line-height: 55px;
 	margin-bottom: 40px;
 	max-width: 843px;
-	margin-top: 80px;
+	margin-top: 158px;
 }
 .request-page__text {
 	font-size: 18px;
