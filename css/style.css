@@ -1213,33 +1213,58 @@ body {
 	padding: 20px 102px;
 }
 
-/*----------services--------------*/
+/*----------cars--------------*/
 
-.services {
+.cars {
 
 }
-.services__title {
+.cars__title {
 	margin-bottom: 40px;
 }
-.services__list {
+
+.type__car {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.type__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.type__link {
+	display: block;
+	padding: 10px 16px;
+	border: 1px solid #CDD0D2;
+
+	font-size: 16px;
+	line-height: 125%;
+	color: #05141F;
+}
+
+.type__link--active {
+	background-color: #05141F;
+	color: #fff;
+}
+
+.cars__list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 40px;
 }
-.services__img {
+.cars__img {
 	margin-bottom: 20px;
 	cursor: pointer;
 }
-.services__item-name {
+.cars__item-name {
 	margin-bottom: 10px;
 }
-.services__price {
+.cars__price {
 	font-size: 15px;
 	line-height: 25px;
 	color: #697279;
 	margin-bottom: 20px;
 }
-.services__button {
+.cars__button {
 	padding: 20px 102px;
 	width: 100%;
 	text-align: center;
@@ -2654,7 +2679,7 @@ input::-webkit-input-placeholder {
 	.header__dis-b .head-item {
 		margin-left: 0;
 	}
-	.services__list {
+	.cars__list {
 		gap: 35px;
 	}
 	.ymap-container {
@@ -2668,7 +2693,7 @@ input::-webkit-input-placeholder {
 
 }
 @media screen and (max-width: 992px) {
-	.services__list {
+	.cars__list {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 35px;
 	}
@@ -2676,14 +2701,14 @@ input::-webkit-input-placeholder {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
-	.services__title {
+	.cars__title {
 		margin-bottom: 20px;
 	}
 	.title-h2 {
 		font-size: 25px;
 		line-height: 35px;
 	}
-	.services__img {
+	.cars__img {
 		width: 100%;
 	}
 	.info__wr {
@@ -2789,7 +2814,7 @@ input::-webkit-input-placeholder {
 	.container {
 		padding: 0 30px;
 	}
-	.services__list {
+	.cars__list {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.question-form-inner1 .dropdown {
