@@ -1221,11 +1221,17 @@ body {
 
 .catalog__list {
 	display: flex;
-	gap: 40px;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 20px;
+	max-width: 1060px;
 }
 
-.catalog__col {
+.catalog__col:not(:last-child) {
+	margin-right: 40px;
+}
+
+.catalog__item {
 	flex-basis: 180px;
 }
 
@@ -1336,6 +1342,7 @@ body {
 
 .cars__row {
 	display: flex;
+	align-items: flex-start;
 	margin-bottom: 5px;
 
 	font-weight: 400;
@@ -1757,10 +1764,8 @@ body {
   }
 }
 
-/*------service-centr----------*/
+/*------card----------*/
 
-.servcentr {
-}
 .servcentr__wrapper {
 	align-items: flex-start;
 }
@@ -1933,6 +1938,281 @@ body {
 }
 
 
+/* Карточка авто - page card.html */
+
+.card {
+	padding-top: 20px;
+	padding-bottom: 140px;
+}
+.card__breadcrumb {
+	margin-bottom: 40px;
+}
+
+.card__head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.card__col {
+	flex-basis: 806px;
+}
+
+.card__title {
+	margin-bottom: 30px;
+
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 110%;
+
+	color: #05141F;
+}
+
+.card__button {
+	padding: 17px 40px;
+
+	background-color: #05141F;
+
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 133%;
+
+	color: #FFFFFF;
+}
+
+.card__grade {
+	margin-bottom: 10px;
+
+	font-size: 15px;
+	line-height: 167%;
+
+	color: #9BA1A5;
+	opacity: 0.96;
+}
+
+.card__cost {
+	display: flex;
+}
+
+.card__cost-price {
+	margin-right: 4px;
+
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 114%;
+	color: #05141F;
+}
+
+.card__rub-icon {
+	margin-top: 3px;
+}
+
+.card__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__content {
+	flex: 0 1 880px;
+}
+
+.card__aside {
+	margin-right: 40px;
+	flex: 0 1 360px;
+}
+
+.card__params {
+	margin-bottom: 125px;
+}
+
+.card__item {
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 18px;
+	line-height: 139%;
+}
+
+.card__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.card__params-name {
+	color: #9BA1A5;
+	opacity: 0.96;
+}
+
+.card__params-value {
+	color: #05141F;
+}
+
+.card__addInfo {
+	margin-bottom: 82px;
+}
+
+.card__params-text {
+	display: flex;
+
+	font-size: 18px;
+	line-height: 139%;
+
+	color: #05141F;
+}
+
+.card__params-text:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.card__params-img {
+	display: block;
+	margin-right: 15px;
+}
+
+.card__aside-btn {
+	width: 100%;
+	margin-bottom: 80px;
+}
+
+.card__services-title {
+	margin-bottom: 30px;
+
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 140%;
+	color: #05141F;
+}
+
+.card__services-item {
+	border: 1px solid #CDD0D2;
+}
+
+.card__services-item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.card__services-link {
+	display: flex;
+	padding: 20px;
+}
+
+.card__services-img {
+	max-width: 50px;
+	max-height: 50px;
+	margin-right: 15px;
+}
+
+.card__services-itemTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 139%;
+	color: #05141F;
+}
+
+.card__services-itemIcon {
+	padding-left: 18px;
+	max-height: 20px;
+}
+
+.card__services-text {
+	font-size: 15px;
+	line-height: 133%;
+
+	color: #9BA1A5;
+	opacity: 0.96;
+}
+
+.card__gallery {
+	margin-bottom: 80px;
+}
+
+.card__container-main {
+	margin-bottom: 10px;
+}
+
+.card__container-little {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+
+	cursor: pointer;
+}
+
+.card__content-title {
+	margin-bottom: 30px;
+	padding-left: 40px;
+
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 114%;
+
+	color: #05141F;
+}
+
+.card__desc {
+	padding-left: 40px;
+
+	font-size: 15px;
+	line-height: 167%;
+
+	color: #05141F;
+}
+
+.desc-list__title {
+	margin-bottom: 10px;
+
+	font-weight: 600;
+}
+
+.card__desc-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 30px;
+}
+
+.card__desc-item {
+	position: relative;
+	padding-left: 13px;
+}
+
+.card__desc-item::before {
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	top: 9px;
+	left: 0;
+
+	border-radius: 50%;
+	background-color: #05141F;
+
+}
+
+.card__desc-text:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.d-block {
+	display: block;
+}
+
+.similar-auto {
+	margin-bottom: 60px;
+}
+
+.similar-auto__title {
+	margin-bottom: 40px;
+
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 114%;
+
+	color: #05141F;
+}
 
 /* /////////////////
 //////Правовая информация////

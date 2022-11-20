@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>Карточка авто</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Fonts -->
+
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-wr d-flex">
+                        <a class="logo d-flex" href="../index.html">
+                            <img class="logo__img" src="../assets/icon/logo.svg" alt="logo">
+                            <div class="logo__text">
+                                Шувалово-Моторс
+                            </div>
+                        </a>
+                        <div class="header__right d-flex">
+                            <div class="header__it head-item">
+                                Режим работы: с 8:00 до 21:00
+                            </div>
+                            <div class="header__it head-item">
+                                г. Санкт-Петербург, Выборгское шоссе, д. 31а
+                            </div>
+                            <a class="header__tel head-item" href="/tel:+7812220-45-82">+7 812 220-45-82</a>
+                        </div>
+
+
+
+                        <div class="header-nav-obl"><span></span> 
+                            <div class="nav-obl-bt">
+                                
+                            </div>
+                        </div>
+                        <div class="rig-menu ">
+                            <div class="rig-menu-in "> 
+                                <div class="rig-menu-in1">
+                                    <nav id="site-navigation" class="main-navigation">
+                                        <ul class="menu">
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Каталог авто</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Спецпредложения</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Трейд-ин</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Кредит</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Страхование</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Выкуп авто</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Преимущества</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">О компании</a>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a class="menu__link" href="/">Контакты</a>
+                                            </li>
+                                        </ul>
+                                    </nav><!-- #site-navigation --> 
+                                    <div class="header__right header__dis-b d-flex">
+                                        <div class="header__caption">
+                                            Адреса салонов
+                                        </div>
+                                        <div class="header__it head-item">
+                                            Режим работы: с 8:00 до 21:00
+                                        </div>
+                                        <div class="header__it head-item">
+                                            г. Санкт-Петербург, Выборгское шоссе, д. 31а
+                                        </div>
+                                        <a class="header__tel head-item" href="/tel:+7812220-45-82">+7 812 220-45-82</a>
+                                    </div>                         
+                                </div>                   
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__bottom-wr">
+                        <nav id="site-navigation" class="main-navigation ww">
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Каталог авто</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Спецпредложения</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Трейд-ин</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Кредит</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Страхование</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Выкуп авто</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Преимущества</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">О компании</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="/">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav><!-- #site-navigation -->
+                    </div>
+                </div>
+            </div><!-- .header -->
+        </header><!-- #masthead -->
+        
+        <main class="main__wrapper">
+          <section class="card">
+            <div class="container">
+              <ul class="breadcrumb card__breadcrumb">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="#">Карточка авто</a></li>
+              </ul>
+              
+              <div class="card__head">
+                <div class="card__col">
+                  <h1 class="card__title">
+                    <span class="card__cars-name">Kia K5</span> — 
+                    <span class="card__cars-year">2020</span>, 
+                    <span class="card__cars-distans">122 000 км</span>
+                  </h1>
+                  
+                  <button class="card__button card__line btn2 gopop3" type="button" aria-label="Заказать звонок">
+                    <span class="button__text">Оставить заявку на просмотр</span>
+                  </button>
+                </div>
+                
+                <div class="card__price">
+                  <p class="card__grade">Хорошая цена</p>
+                  <div class="card__cost">
+                    <p class="card__cost-price">1 990 000</p>
+
+                    <svg class="card__rub-icon" width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16.8543V13.8808H2.64212V0.5H10.2162C13.4259 0.5 15.8984 1.04998 17.6337 2.14993C19.8779 3.56416 21 5.6311 21 8.35077C21 10.7078 20.1715 12.6358 18.5144 14.1346C17.5359 15.0411 16.3812 15.712 15.0503 16.1471C13.7195 16.5823 12.069 16.7999 10.0988 16.7999H6.38024V19.302H19.8453V22.2211H6.38024V26.5H2.64212V22.2211H0V19.302H2.64212V16.8543H0ZM17.1053 8.45955C17.1053 6.65853 16.4268 5.34705 15.0699 4.5251C13.9087 3.82404 12.2386 3.4735 10.0596 3.4735H6.38024V13.8808H9.49208C10.9925 13.8808 12.2125 13.7538 13.1519 13.5C14.0913 13.2341 14.8742 12.8291 15.5005 12.2852C16.5704 11.294 17.1053 10.0188 17.1053 8.45955Z" fill="#05141F"/>
+                    </svg>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__inner">
+                <aside class="card__aside">
+
+                  <ul class="card__params">
+                    <li class="card__item">
+                      <span class="card__params-name">Владельцы</span>
+                      <span class="card__params-value">2 владелец</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Год выпуска</span>
+                      <span class="card__params-value">2020</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Пробег</span>
+                      <span class="card__params-value">37 273 км</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Двигатель</span>
+                      <span class="card__params-value">2.5 л / 194 л.с / Бензин</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Коробка</span>
+                      <span class="card__params-value">Автомат</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Привод</span>
+                      <span class="card__params-value">Передний</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Кузов</span>
+                      <span class="card__params-value">Седан</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Цвет</span>
+                      <span class="card__params-value">Серый</span>
+                    </li>
+                    <li class="card__item">
+                      <span class="card__params-name">Поколение</span>
+                      <span class="card__params-value">III</span>
+                    </li>
+                  </ul>
+
+                  <div class="card__addInfo">
+
+                    <div class="card__params-text">
+                      <img src="../assets/icon/task-line.svg" alt="" class="card__params-img">
+                      <p>
+                        <span class="card__params-pts">ПТС</span>
+                        <span> — </span>
+                        <span class="card__params-legal">Оригинал</span>
+                      </p>
+                    </div>
+
+                    <div class="card__params-text">
+                      <img src="../assets/icon/legal.svg" alt="" class="card__params-img">
+                      <p>
+                        <span class="card__params-pts">Гарантия юридической чистоты</span>
+                      </p>
+                    </div>
+
+                  </div>
+                  <button class="card__button card__aside-btn card__line btn2 gopop3" type="button" aria-label="Заказать звонок">
+                    <span class="button__text">Оставить заявку на просмотр</span>
+                  </button>
+
+                  <div class="card__services">
+                    <h3 class="card__services-title">Другие услуги:</h3>
+
+                    <ul class="card__services-list">
+                      <li class="card__services-item">
+                        <a href="" class="card__services-link">
+                          <img class="card__services-img" src="../assets/icon/credit.svg" alt="percent">
+                          <div class="card__services-params">
+                            <h4 class="card__services-itemTitle">
+                              <span>Рассчитать кредит</span>
+                              <img class="card__services-itemIcon" src="../assets/icon/arrow_little.svg" alt="arrow">
+                            </h4>
+                            <p class="card__services-text">
+                              Воспользуйтесь уникальными условиями кредитования от лидера рынка
+                            </p>
+                          </div>  
+                        </a>
+                      </li>
+
+                      <li class="card__services-item">
+                        <a href="" class="card__services-link">
+                          <img class="card__services-img" src="../assets/icon/insurance.svg" alt="insurance">
+                          <div class="card__services-params">
+                            <h4 class="card__services-itemTitle">
+                              <span>Выгодное страхование</span>
+                              <img class="card__services-itemIcon" src="../assets/icon/arrow_little.svg" alt="arrow">
+                            </h4>
+                            <p class="card__services-text">
+                              Рассчитайте страховку среди лидеров российского рынка страхования
+                            </p>
+                          </div> 
+                        </a>
+                      </li>
+
+                      <li class="card__services-item">
+                        <a href="" class="card__services-link">
+                          <img class="card__services-img" src="../assets/icon/car.svg" alt="car">
+                          <div class="card__services-params">
+                            <h4 class="card__services-itemTitle">
+                              <span>Оценить свой автомобиль</span>
+                              <img class="card__services-itemIcon" src="../assets/icon/arrow_little.svg" alt="arrow">
+                            </h4>
+                            <p class="card__services-text">
+                              Получите выгодное предложение по цене своего автомобиля
+                            </p>
+                          </div> 
+                        </a>
+                      </li>
+
+                      <li class="card__services-item">
+                        <a href="" class="card__services-link">
+                          <img class="card__services-img" src="../assets/icon/traid-in.svg" alt="traid-in">
+                          <div class="card__services-params">
+                            <h4 class="card__services-itemTitle">
+                              <span>Трейд-ин</span>
+                              <img class="card__services-itemIcon" src="../assets/icon/arrow_little.svg" alt="arrow">
+                            </h4>
+                            <p class="card__services-text">
+                              Зачёт вашего автомобиля и подбор нового в день обращения
+                            </p>
+                          </div> 
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </aside>
+                <section class="card__content">
+                  <div class="card__gallery">
+                    <div class="card__container-main">
+                      <img class="card__img-main" src="../assets/img/card-main.jpg" alt="Kia">
+                    </div>
+
+                    <div class="card__container-little">
+                      <img class="card__img-little" src="../assets/img/card-little-1.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-2.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-3.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-4.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-5.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-6.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-7.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-8.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-9.jpg" alt="Kia">
+                      <img class="card__img-little" src="../assets/img/card-little-10.jpg" alt="Kia">
+                    </div>
+                  </div>
+
+                  <h2 class="card__content-title">Комплектация автомобиля</h2>
+
+                  <div class="card__desc">
+                    
+                    <h4 class="desc-list__title">Мультимедиа</h4>
+                    <ul class="card__desc-list">
+                      <li class="card__desc-item">USB</li>
+                      <li class="card__desc-item">Мультифункциональное рулевое колесо</li>
+                      <li class="card__desc-item">Bluetooth</li>
+                      <li class="card__desc-item">Розетка 12V</li>
+                    </ul>
+
+                    <h4 class="desc-list__title">Безопасность и вождение</h4>
+                    <ul class="card__desc-list">
+                      <li class="card__desc-item">Антиблокировочная система тормозов (ABS)</li>
+                      <li class="card__desc-item">Система мониторинга слепых зон</li>
+                      <li class="card__desc-item">Антипробуксовочная система (TCS)</li>
+                      <li class="card__desc-item">Система помощи при старте в горку (HAC)</li>
+                      <li class="card__desc-item">Боковые подушки безопасности</li>
+                      <li class="card__desc-item">Система помощи при экстренном торможении</li>
+                      <li class="card__desc-item">Коленная подушка безопасности водителя</li>
+                      <li class="card__desc-item">Фронтальные подушки безопасности водителя и переднего пассажира</li>
+                      <li class="card__desc-item">Крепления для детского кресла ISOFIX</li>
+                      <li class="card__desc-item">Система мониторинга давления в шинах</li>
+                      <li class="card__desc-item">Шторки безопасности</li>
+                    </ul>
+
+                    <h4 class="desc-list__title">Освещение и обзор</h4>
+                    <ul class="card__desc-list">
+                      <li class="card__desc-item">Датчик дождя</li>
+                      <li class="card__desc-item">Противотуманные фары</li>
+                      <li class="card__desc-item">Датчик света</li>
+                      <li class="card__desc-item">Фары: Светодиодные</li>
+                      <li class="card__desc-item">Дневные ходовые огни</li>
+                    </ul>
+
+                    <h4 class="desc-list__title">Комфорт</h4>
+                    <ul class="card__desc-list">
+                      <li class="card__desc-item">Датчики парковки сзади</li>
+                      <li class="card__desc-item">Регулировка руля: По высоте</li>
+                      <li class="card__desc-item">Датчики парковки спереди</li>
+                      <li class="card__desc-item">Система «Smart key» – доступ без ключа + кнопка START/STOP</li>
+                      <li class="card__desc-item">Зеркала с электроприводом и обогревом</li>
+                      <li class="card__desc-item">Камера кругового обзора</li>
+                      <li class="card__desc-item">Электропривод двери багажника</li>
+                      <li class="card__desc-item">Круиз-контроль</li>
+                      <li class="card__desc-item">Электрорегулировка сиденья водителя</li>
+                      <li class="card__desc-item">Подогрев руля</li>
+                      <li class="card__desc-item">Подогрев сидений</li>
+                    </ul>
+
+                    <h4 class="desc-list__title">Специальные условия:</h4>
+                    <ul class="card__desc-list d-block">
+                      <li class="card__desc-item">Скидка при покупке в кредит до 150 000 руб.</li>
+                      <li class="card__desc-item">Скидка при оформлении КАСКО до 50 000 руб.</li>
+                      <li class="card__desc-item">Скидка за trade-in до 100 000 руб.</li>
+                    </ul>
+
+                    <p class="card__desc-text">
+                      Внушительный дизайн, огромная популярность и прекрасные технические данные автомобиля, не оставят вас не замеченным на дорогах города, прекрасное внешнее и техническое состояние подтолкнут вас к выбору именно данного автомобиля.
+                    </p>
+                    <p class="card__desc-text">
+                      Богатая комплектация и безупречная история дополнительный повод обратить внимание на данного представителя бизнес седана от компании КИА.
+                    </p>
+                    <p class="card__desc-text">
+                      Перед визитом, уточняйте наличие автомобиля!
+                    </p>
+                    <p class="card__desc-text">
+                      Автомобиль продаётся официальным дилером Шувалово-Моторс.
+                    </p>
+                    <p class="card__desc-text">
+                      Каждый автомобиль проходит комплексную техническую диагностику, включая кузовной осмотр и проверку систем безопасности.
+                    </p>
+                    <p class="card__desc-text">Гарантия юридической чистоты.</p>
+
+                    <h4 class="desc-list__title">Выкуп:</h4>
+                    <ul class="card__desc-list d-block">
+                      <li class="card__desc-item">Полный переход права собственности по договору купли-продажи.</li>
+                      <li class="card__desc-item">Выплата денежных средств в день обращения.</li>
+                    </ul>
+
+                    <h4 class="desc-list__title">Обмен:</h4>
+                    <ul class="card__desc-list d-block">
+                      <li class="card__desc-item">Принимаются любые автомобили. В том числе кредитные, легковые, коммерческие.</li>
+                      <li class="card__desc-item">Гарантированная скидка на выбранный автомобиль при сдаче своего автомобиля.</li>
+                    </ul>
+
+                    <h4 class="desc-list__title">Кредит:</h4>
+                    <ul class="card__desc-list d-block">
+                      <li class="card__desc-item">Ставка от 9% годовых.</li>
+                      <li class="card__desc-item">Мы сотрудничаем с крупнейшими банками.</li>
+                      <li class="card__desc-item">Рассмотрение заявки по двум документам.</li>
+                    </ul>
+
+                    <p class="card__desc-text">
+                      Автомобиль полностью обслужен у официального дилера, без технических недочётов.
+                      В ДТП не участвовала, полностью в родном окрасе.
+                    </p>
+                    <p class="card__desc-text">
+                      Финальное предложение обсуждается при встрече в автосалоне.
+                    </p>
+                    <p class="card__desc-text">
+                      Все автомобили представлены в нашем дилерском центре по адресу: Выборгское шоссе д. 31 литер А (пр.Просвещения / Озерки)
+                    </p>
+                    <p class="card__desc-text">ПТС оригинал. Возможен торг.</p>
+                    <p class="card__desc-text">Место осмотра</p>
+                    <p class="card__desc-text">Осмотреть автомобиль можно по адресу: Санкт-Петербург, Выборгское ш., 31а</p>
+                    
+                  </div>
+
+                </section>
+              </div>
+            </div>
+          </section>
+
+        </main>
+
+        <section class="similar-auto">
+          <div class="container">
+            <h2 class="similar-auto__title">Похожие авто</h2>
+          </div>
+        </section>
+    
+        <footer class="footer sect-padding">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__top">
+                        <div class="logo">
+                            <img class="logo__img" src="../assets/icon/logo-footer.svg" alt="logo">
+                            <div class="logo__text">
+                                Шувалово-Моторс
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__middle d-flex">    
+                        <nav id="site-navigation" class="main-navigation main-navigation--footer">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Каталог автомобилей</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Трейд-ин</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Кредит</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Страхование</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Выкуп авто</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Спецпредложения</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Наши преимущества</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Отзывы</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">О компании</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link" href="/">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav><!-- #site-navigation -->
+    
+                        <div class="footer__contacts-params">
+                            <div class="footer__contacts-params-title">
+                                Адрес
+                            </div>
+                            <div class="footer__contacts-params-desc">
+                                г. Санкт-Петербург, Выборгское шоссе, д. 31а
+                            </div>
+                            <a class="footer__tel" href="/tel:+7812220-45-82">+7 812 220-45-82</a>
+                            <div class="footer__contacts-caption">
+                                <div class="footer__contacts-social">
+                                    Шувалово-Моторс в соцсетях
+                                </div> 
+                                <div class="footer__contacts-icons">
+                                    <a class="footer__contacts-link" href="/">
+                                        <img class="footer__contacts-img" src="../assets/icon/vk-icon.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__legal">
+                            <div class="footer__legal-inf">
+                                © 2022 ООО «Киа Россия и СНГ», ООО «Шувалово-Моторс» ведут деятельность на территории РФ в соответствии с законодательством РФ. 
+                                Реализуемые товары доступны к получению на территории РФ. Мониторинг потребительского поведения субъектов, находящихся за пределами РФ, 
+                                не ведётся. Информация о соответствующих моделях и комплектациях и их наличии, ценах, 
+                                возможных выгодах и условиях приобретения доступна у дилеров Kia.
+                            </div>
+                            <button class="footer__button btn1 gopop3" type="button" aria-label="Заказать звонок">
+                                <span class="button__text">Заказать звонок</span>
+                            </button>
+                            
+                        </div>
+                        <div class="footer__params-button">
+                            <a class="footer__legal-link" href="legal_paramsrmation.html">Правовая информация</a>
+                            <div class="footer__subparams">
+                                © 2022 ООО «Киа Россия и СНГ» ООО «Шувалово-Моторс»
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="question-form">
+            <div class="question-form-inner1 form-in">
+                <form id="form1" action="#">
+                    <div class="form__top">
+                        <div class="form__title">
+                            Записаться на сервис
+                        </div>
+                        <div class="form__name title-h3">
+                            Данные автомобиля
+                        </div>
+                        <div class="dropdown-all">
+                            <div class="dropdown dropbtn-none">
+                                <button class="dropbtn">VIN-номер (необязательно)</button>
+                                
+                            </div>
+                            <div class="dropdown">
+                                <button data-path="five" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Модельный ряд
+                                </button>
+                                <ul data-target="five" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="/#">Модельный ряд</a></li>
+                                  <li><a class="dropdown-item" href="/#">Модельный ряд</a></li>
+                                  <li><a class="dropdown-item" href="/#">Модельный ряд</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button data-path="six" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Пробег автомобиля
+                                </button>
+                                <ul data-target="six" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="/#">Пробег автомобиля</a></li>
+                                  <li><a class="dropdown-item" href="/#">Пробег автомобиля</a></li>
+                                  <li><a class="dropdown-item" href="/#">Пробег автомобиля</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button data-path="seven" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Номер ТО
+                                </button>
+                                <ul data-target="seven" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="/#">Номер ТО</a></li>
+                                  <li><a class="dropdown-item" href="/#">Номер ТО</a></li>
+                                  <li><a class="dropdown-item" href="/#">Номер ТО</a></li>
+                                </ul>
+                            </div>
+                            <input class="dropbtn" type="date" name="Date" id="davaToday">
+                        </div>
+                    </div>
+                    <div class="form__bottom">
+                        <h3 class="form__name title-h3">
+                            Контактная информация
+                        </h3>
+                        <input type="text" class="inp-p" placeholder="Ваше имя">
+                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                        <input type="text" class="inp-p inp" placeholder="Какую проблему необходимо решить?">
+                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>                        <button class="form__button btn1" type="button" aria-label="Записаться">
+                            <span class="button__text ">Записаться</span> 
+                        </button>
+                        <div id="closeform" class="close">+</div>
+                    </div> 
+                </form>
+            </div>
+            <div class="question-form-inner2 form-in">
+                <form id="form2" action="#">
+                    <div class="form__img">
+                        <img src="../assets/img/form2.png" alt="">
+                    </div>
+                    <div class="form__bottom">
+                        <h3 class="form__name title-h3">
+                            Записаться на ремонт
+                        </h3>
+                        <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                        <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                            <span class="button__text ">Отправить запрос</span> 
+                        </button>
+                        <div id="closeform2" class="close">+</div>
+                    </div> 
+                </form>
+            </div>
+            <div class="question-form-inner3 form-in">
+                <form id="form3" action="#">
+                    <div class="form__img">
+                        <img src="../assets/img/form3.png" alt="">
+                    </div>
+                    <div class="form__bottom">
+                        <h3 class="form__name title-h3">
+                            Записаться
+                        </h3>
+                        <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                        <div class="dropdown">
+                            <button data-path="one" class="dropbtn btn btn-secondary dropdown-toggle">
+                                Марка автомобиля
+                            </button>
+                            <ul data-target="one" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="/#">Марка автомобиля</a></li>
+                              <li><a class="dropdown-item" href="/#">Марка автомобиля</a></li>
+                              <li><a class="dropdown-item" href="/#">Марка автомобиля</a></li>
+                            </ul>
+                        </div>
+                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                        <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                            <span class="button__text ">Отправить запрос</span> 
+                        </button>
+                        <div id="closeform3" class="close">+</div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- js -->
+    <script src="../js/script.js"></script>
+
+    <script>document.getElementById('davaToday').valueAsDate = new Date();</script>
+</body>
+</html>
