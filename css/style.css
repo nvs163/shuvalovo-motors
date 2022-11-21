@@ -2169,14 +2169,19 @@ body {
 }
 
 .card__desc-list {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	column-count: 2;
 	margin-bottom: 30px;
 }
 
 .card__desc-item {
+	/* flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 49%; */
 	position: relative;
 	padding-left: 13px;
+	/* display:block;
+	width:49%;
+	float:left; */
 }
 
 .card__desc-item::before {
@@ -2196,8 +2201,8 @@ body {
 	margin-bottom: 30px;
 }
 
-.d-block {
-	display: block;
+.colum-1 {
+	column-count: 1;
 }
 
 .similar-auto {
