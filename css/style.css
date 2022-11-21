@@ -1944,13 +1944,12 @@ body {
 }
 
 .card__head {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 60px;
+	margin-bottom: 120px;
 }
 
-.card__col {
-	flex-basis: 806px;
+.card__row {
+	display: flex;
+	justify-content: space-between;
 }
 
 .card__title {
@@ -1999,12 +1998,16 @@ body {
 }
 
 .card__rub-icon {
-	margin-top: 3px;
+	margin-top: -5px;
 }
 
-.card__inner {
+.card__row {
 	display: flex;
 	justify-content: space-between;
+}
+
+.card__row--reverse {
+	flex-direction: row-reverse;
 }
 
 .card__content {
@@ -2017,7 +2020,7 @@ body {
 }
 
 .card__params {
-	margin-bottom: 125px;
+	margin-bottom: 122px;
 }
 
 .card__item {
