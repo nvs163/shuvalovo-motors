@@ -970,6 +970,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
+	position: relative;
 }
 .container{
 	max-width: 1300px;
@@ -1852,7 +1853,7 @@ body {
 	color: #fff;
 	margin-bottom: 25px;
 
-	background-image: url(../assets/icon/telw.png);
+	background-image: url(../assets/icon/phone-icon.svg);
     background-repeat: no-repeat;
     background-position: 0px center;
     padding-left: 30px;
@@ -3047,6 +3048,159 @@ input::-webkit-input-placeholder {
 }
 .question-form-inner3 .dropdown-content {
 	max-width: 410px;
+}
+
+/* modal (pop-up) - modal__form */
+
+.modal__form {
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	z-index: 1000;
+	background-color: #fff;
+
+	font-size: 15px;
+	line-height: 167%;
+	color: #05141F;
+}
+
+.modal__container {
+	max-width: 1140px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: auto;
+	margin-right: 0;
+	position: relative;
+}
+
+.modal__button {
+	padding: 20px 82px;
+	background-color: #05141F;
+	color: #fff;
+	font-weight: 600;
+	line-height: 133%;
+}
+
+.modal__close {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.modal__close-btn {
+	display: flex;
+	align-items: center;
+
+	/* position: absolute;
+	top: 13px;
+	left: 0; */
+}
+
+.modal__close-img {
+	padding-right: 10px;
+}
+
+.modal__close-text {
+	font-size: 13px;
+	line-height: 108%;
+	color: #05141F;
+}
+
+.modal__hero {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.modal__hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(89.27deg, rgba(5, 20, 31, 0.8) 0.59%, rgba(0, 0, 0, 0) 99.35%);
+	z-index: 2;
+}
+
+.modal__innner {
+	position: relative;
+	z-index: 4;
+}
+
+.modal__title {
+	max-width: 900px;
+}
+
+.modal__hero-exchange {
+	background-image: url(../assets/img/bg-modal-exchange.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.modal__exchange-title {
+	margin-bottom: 70px;
+	max-width: 635px;
+
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 110%;
+
+	color: #FFFFFF;
+}
+
+.modal__section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.modal__section-title {
+	margin-bottom: 30px;
+
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 140%;
+}
+
+.modal__advan-list {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 20px;
+}
+
+.modal__advan-item {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 20px;
+
+	flex: 0 1 33.333%;
+}
+
+.modal__item-text {
+	line-height: 167%;
+	color: #697279;
+}
+
+.modal__list {
+	gap: 20px;
+}
+
+.modal__item {
+	flex: 0 1 25%;
+}
+
+.modal__item-img {
+	margin-bottom: 20px;
+}
+
+.modal__item-title {
+	margin-bottom: 10px;
+}
+
+.modal__button-mb {
+	margin-bottom: 50px;
 }
 
 
