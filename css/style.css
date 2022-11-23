@@ -3053,7 +3053,6 @@ input::-webkit-input-placeholder {
 /* modal (pop-up) - modal__form */
 
 .modal__form {
-	/* display: none; */
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -3249,6 +3248,10 @@ input::-webkit-input-placeholder {
 	height: 200px;
 	flex: 0 1 33.333%;
 	border: 1px solid #CDD0D2
+}
+
+.modal__partners-img {
+	margin-bottom: 0;
 }
 
 .modal__credit-title {
@@ -3514,7 +3517,7 @@ input::-webkit-input-placeholder {
 	.question-form-inner2 .close {
 		color: #fff;
 	}
-}	
+}
 
 @media screen and (max-width: 768px) {
 	.container {
@@ -4004,8 +4007,185 @@ input::-webkit-input-placeholder {
 	}
 }
 
+/* modal (pop-up) - modal__form */
+@media screen and (max-width: 992px) {
+	.modal__container {
+		max-width: 610px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 
+	.modal__section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
+	.modal__hero {
+		margin-bottom: 40px;
+	}
+
+	.modal__advan-list {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.modal__advan-item {
+		flex: 0 1 100%;
+	}
+
+	.modal__list {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.modal__item {
+		flex: 0 1 48%;
+	}
+
+	.modal__partners {
+    padding-top: 0;
+	}
+
+	.modal__partners-list {
+		flex-wrap: nowrap;
+	}
+
+	.modal__partners-item {
+		height: 100px;
+		flex: 0 1 33.333%;
+		padding-left: 23px;
+		padding-right: 23px;
+	}
+
+	.modal__button-mb {
+		width: 100%;
+	}
+
+	.modal__insurance-subtitle {
+		margin-bottom: 25px;
+	}
+
+	.modal__hero-credit {
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.modal__container {
+		max-width: 313px;
+		padding-left: 31px;
+		padding-right: 31px;
+	}
+
+	.modal__button {
+		padding: 20px 50px;
+		width: 100%;
+	}
+
+	.modal__hero {
+		padding-top: 64px;
+		padding-bottom: 64px;
+		margin-bottom: 31px;
+	}
+
+	.modal__title {
+		max-width: 250px;
+		font-size: 25px;
+		line-height: 140%;
+	}
+
+	.modal__subtitle {
+		max-width: 250px;
+	}
+
+	.modal__exchange-title {
+		margin-bottom: 20px;
+	}
+
+	.modal__section {
+		padding-top: 0px;
+	}
+
+	.modal__section-title {
+		margin-bottom: 20px;
+	}
+
+	.modal__desc-text {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.modal__advan-item {
+		flex-direction: column;
+		flex: 0 1 100%;
+		gap: 10px;
+	}
+
+	.modal__item {
+		flex: 0 1 100%;
+	}
+
+	.modal__item-img {
+		margin-bottom: 10px;
+	}
+
+	.modal__item-title {
+		margin-bottom: 5px;
+	}
+
+	.modal__button-mb {
+    margin-bottom: 40px;
+	}
+
+	.modal__partners-list {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.modal__hero-insurance {
+		padding-top: 51px;
+		padding-bottom: 51px;
+	}
+
+	.modal__insurance-title {
+		margin-bottom: 10px;
+	}
+
+	.modal__insurance-subtitle {
+		margin-bottom: 20px;
+	}
+
+	.modal__partners-item {
+		height: 160px;
+		flex: 0 1 100%;
+	}
+
+	.modal__hero-credit {
+		padding-top: 27px;
+		padding-bottom: 27px;
+	}
+
+	.modal__credit-title {
+		margin-bottom: 10px;
+	}
+
+	.modal__credit-subtitle {
+		margin-bottom: 20px;
+	}
+
+	.modal__hero-buy {
+		padding-top: 52px;
+		padding-bottom: 52px;
+	}
+
+	.modal__buy-title {
+		margin-bottom: 10px;
+	}
+
+	.modal__buy-subtitle {
+		margin-bottom: 20px;
+	}
+}
 
 
 .shake:hover {
