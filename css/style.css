@@ -3053,7 +3053,7 @@ input::-webkit-input-placeholder {
 /* modal (pop-up) - modal__form */
 
 .modal__form {
-	display: none;
+	/* display: none; */
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -3090,10 +3090,6 @@ input::-webkit-input-placeholder {
 .modal__close-btn {
 	display: flex;
 	align-items: center;
-
-	/* position: absolute;
-	top: 13px;
-	left: 0; */
 }
 
 .modal__close-img {
@@ -3111,6 +3107,10 @@ input::-webkit-input-placeholder {
 	padding-bottom: 80px;
 	margin-bottom: 50px;
 	position: relative;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .modal__hero::before {
@@ -3130,25 +3130,43 @@ input::-webkit-input-placeholder {
 }
 
 .modal__title {
-	max-width: 900px;
-}
-
-.modal__hero-exchange {
-	background-image: url(../assets/img/bg-modal-exchange.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.modal__exchange-title {
-	margin-bottom: 70px;
 	max-width: 635px;
-
+	
 	font-weight: 600;
 	font-size: 50px;
 	line-height: 110%;
 
 	color: #FFFFFF;
+}
+
+.modal__subtitle {
+	max-width: 635px;
+
+	font-weight: 350;
+	font-size: 18px;
+	line-height: 139%;
+
+	color: #FFFFFF;
+}
+
+.modal__hero-exchange {
+	background-image: url(../assets/img/bg-modal-exchange.jpg);
+}
+
+.modal__hero-insurance {
+	background-image: url(../assets/img/bg-modal-insurance.jpg);
+}
+
+.modal__hero-credit {
+	background-image: url(../assets/img/bg-modal-credit.jpg);
+}
+
+.modal__hero-buy {
+	background-image: url(../assets/img/bg-modal-buy.jpg);
+}
+
+.modal__exchange-title {
+	margin-bottom: 70px;
 }
 
 .modal__section {
@@ -3162,6 +3180,10 @@ input::-webkit-input-placeholder {
 	font-weight: 600;
 	font-size: 25px;
 	line-height: 140%;
+}
+
+.modal__desc-text {
+	max-width: 775px;
 }
 
 .modal__advan-list {
@@ -3202,6 +3224,32 @@ input::-webkit-input-placeholder {
 .modal__button-mb {
 	margin-bottom: 50px;
 }
+
+.modal__hero-insurance {
+	display: block;
+}
+.modal__insurance-title {
+	margin-bottom: 20px;
+}
+
+.modal__insurance-subtitle {
+	margin-bottom: 80px;
+}
+
+.modal__partners {
+	padding-top: 0;
+}
+
+.modal__partners-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 200px;
+	flex: 0 1 33.333%;
+	border: 1px solid #CDD0D2
+}
+
 
 
 /* 1440, 1200, 992, 768, 576 */
