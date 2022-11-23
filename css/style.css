@@ -3252,7 +3252,7 @@ input::-webkit-input-placeholder {
 }
 
 .modal__credit-title {
-	margin-bottom: 2px;
+	margin-bottom: 20px;
 }
 
 .modal__credit-subtitle {
@@ -3260,6 +3260,18 @@ input::-webkit-input-placeholder {
 }
 
 .modal__steps-credit {
+	padding-top: 0;
+}
+
+.modal__buy-title {
+	margin-bottom: 20px;
+}
+
+.modal__buy-subtitle {
+	margin-bottom: 25px;
+}
+
+.modal__steps-buy {
 	padding-top: 0;
 }
 
