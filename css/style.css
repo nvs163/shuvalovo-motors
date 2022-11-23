@@ -3207,6 +3207,7 @@ input::-webkit-input-placeholder {
 
 .modal__list {
 	gap: 20px;
+	align-items: flex-start;
 }
 
 .modal__item {
@@ -3248,6 +3249,18 @@ input::-webkit-input-placeholder {
 	height: 200px;
 	flex: 0 1 33.333%;
 	border: 1px solid #CDD0D2
+}
+
+.modal__credit-title {
+	margin-bottom: 2px;
+}
+
+.modal__credit-subtitle {
+	margin-bottom: 30px;
+}
+
+.modal__steps-credit {
+	padding-top: 0;
 }
 
 
