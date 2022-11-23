@@ -3053,6 +3053,7 @@ input::-webkit-input-placeholder {
 /* modal (pop-up) - modal__form */
 
 .modal__form {
+	display: none;
 	position: absolute;
 	top: 20px;
 	right: 0;
