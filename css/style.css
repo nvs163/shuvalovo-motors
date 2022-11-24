@@ -4215,7 +4215,8 @@ input::-webkit-input-placeholder {
 	}
 
 	.card__rub-icon {
-		margin-top: -5px;
+		margin-top: 6px;
+		max-height: 19px;
 	}
 
 	.card__item {
