@@ -302,6 +302,101 @@ function closeQuestionForm7(){
 }
 
 
+// modal
+var gomodal = document.querySelectorAll('.gomodal');
+var gomodaltradein = document.querySelectorAll('.gomodaltradein');
+var gomodalinsurance = document.querySelectorAll('.gomodalinsurance');
+var gomodalcredit = document.querySelectorAll('.gomodalcredit');
+var gomodalbuy = document.querySelectorAll('.gomodalbuy');
+
+var modalpopup  =  document.getElementsByClassName("modal__pop-up")[0];
+var modalform  =  document.getElementsByClassName("modal__form")[0];
+var modalformtradein  =  document.getElementsByClassName("modal__form-trade-in")[0];
+var modalforminsurance  =  document.getElementsByClassName("modal__form-insurance")[0];
+var modalformcredit  =  document.getElementsByClassName("modal__form-credit")[0];
+var modalformbuy  =  document.getElementsByClassName("modal__form-buy")[0];
+
+var modalclose  =  document.getElementsByClassName("modal__close-btn");
+
+
+modalclose.addEventListener("click", closeModalPopup, false);
+
+
+for (var i = 0; i < gomodal.length; i++) {
+  gomodal[i].addEventListener("click", openModalPopup, false);
+}
+
+for (var i = 0; i < gomodaltradein.length; i++) {
+  gomodaltradein[i].addEventListener("click", openModalTradein, false);
+}
+
+for (var i = 0; i < gomodalinsurance.length; i++) {
+  gomodalinsurance[i].addEventListener("click", openModalInsurance, false);
+}
+
+for (var i = 0; i < gomodalcredit.length; i++) {
+  gomodalcredit[i].addEventListener("click", openModalCredit, false);
+}
+
+for (var i = 0; i < modalformbuy.length; i++) {
+  modalformbuy[i].addEventListener("click", openModalBuy, false);
+}
+
+
+
+function openModalTradein(){
+  modalpopup.classList.add("active1");
+  setTimeout(function() { 
+    modalformtradein.classList.add("active");
+  }, 100);
+}
+
+function openModalInsurance(){
+  modalpopup.classList.add("active2");
+  setTimeout(function() { 
+    modalforminsurance.classList.add("active");
+  }, 100);
+}
+
+function openModalCredit(){
+  modalpopup.classList.add("active3");
+  setTimeout(function() { 
+    modalformcredit.classList.add("active");
+  }, 100);
+}
+
+function openModalBuy(){
+  modalpopup.classList.add("active4");
+  setTimeout(function() { 
+    modalformbuy.classList.add("active");
+  }, 100);
+}
+
+
+function closeModalPopup(){
+  modalpopup.classList.remove("active1");
+  modalform.classList.remove("active");
+}
+
+function closeModalTradein(){
+  modalpopup.classList.remove("active1");
+  modalformtradein.classList.remove("active");
+}
+
+function closeModalInsurance(){
+  modalpopup.classList.remove("active2");
+  modalforminsurance.classList.remove("active");
+}
+
+function closeModalCredit(){
+  modalpopup.classList.remove("active3");
+  modalformcredit.classList.remove("active");
+}
+
+function closeModalBuy(){
+  modalpopup.classList.remove("active4");
+  modalformbuy.classList.remove("active");
+}
 
 // -----Карта------------
 
