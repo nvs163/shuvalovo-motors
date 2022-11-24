@@ -2898,7 +2898,7 @@ ul.breadcrumb li+li:before {
     justify-content: center;
     transition: all 0.3s ease-out;
 }
-.question-form.active3 {
+.question-form.active3, .question-form.active4, .question-form.active5, .question-form.active6, .question-form.active7 {
     z-index: 111111;
     display: flex;
     flex: 0 1 auto;
@@ -2962,7 +2962,7 @@ ul.breadcrumb li+li:before {
     height: 100%;
 	padding: 60px 50px 50px 50px;
 }
-#form3 {
+#form3, #form4, #form5, #form6, #form7 {
 	display: flex;
 }
 #form2 {
@@ -3028,6 +3028,9 @@ ul.breadcrumb li+li:before {
 .question-form-inner3 .inp-p {
 	max-width: 410px;
 }
+.question-form-inner4 .inp-p, .question-form-inner5 .inp-p, .question-form-inner6 .inp-p, .question-form-inner7 .inp-p {
+	max-width: 410px;
+}
 .question-form-inner2 .inp-p {
 	max-width: 410px;
 }
@@ -3043,17 +3046,23 @@ input::-webkit-input-placeholder {
 .question-form-inner3 .inp-p-inf {
 	max-width: 410px;
 }
+.question-form-inner4 .inp-p-inf, .question-form-inner5 .inp-p-inf, .question-form-inner6 .inp-p-inf, .question-form-inner7 .inp-p-inf {
+	max-width: 410px;
+}
 .question-form-inner2 .inp-p-inf {
 	max-width: 410px;
 }
 .question-form-inner3 .dropdown-content {
 	max-width: 410px;
 }
+.question-form-inner4 .dropdown-content, .question-form-inner5 .dropdown-content, .question-form-inner6 .dropdown-content, .question-form-inner7 .dropdown-content {
+	max-width: 410px;
+}
 
 /* modal (pop-up) - modal__form */
 
 .modal__form {
-	display: none;
+	/* display: none; */
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -3497,7 +3506,7 @@ input::-webkit-input-placeholder {
 	.advan {
 		padding-bottom: 40px;
 	}
-	#form3 {
+	#form3, #form4, #form5, #form6, #form7 {
 		flex-direction: column;
 	}
 	#form2 {
@@ -3506,13 +3515,22 @@ input::-webkit-input-placeholder {
 	.question-form-inner3 {
 		margin-top: 15.5em;
 	}
+	.question-form-inner4, .question-form-inner5, .question-form-inner6, .question-form-inner7 {
+		margin-top: 15.5em;
+	}
 	#form3 .form__img img {
+		width: 100%;
+	}
+	#form4 .form__img img, #form5 .form__img img, #form6 .form__img img, #form7 .form__img img {
 		width: 100%;
 	}
 	#form2 .form__img img {
 		width: 100%;
 	}
 	.question-form-inner3 .close {
+		color: #fff;
+	}
+	.question-form-inner4 .close, .question-form-inner5 .close, .question-form-inner6 .close, .question-form-inner7 .close {
 		color: #fff;
 	}
 	.question-form-inner2 .close {
@@ -3660,7 +3678,10 @@ input::-webkit-input-placeholder {
 		max-width: 293px;
 	}
 	.question-form #form3 .dropbtn {
-		max-width: 293px;
+		width: 293px;
+	}
+	.question-form #form4 .dropbtn, .question-form #form5 .dropbtn, .question-form #form6 .dropbtn, .question-form #form7 .dropbtn {
+		width: 293px;
 	}
 	.form__bottom {
 		align-items: left;
@@ -3671,13 +3692,16 @@ input::-webkit-input-placeholder {
 	#form3 .form__bottom input {
 		width: 293px;
 	}
+	#form4 .form__bottom input, #form5 .form__bottom input, #form6 .form__bottom input, #form7 .form__bottom input {
+		width: 293px;
+	}
 	.inp-p-inf {
 		width: 293px;
 	}
 	.form__button {
 		width: 100%;
 	} 
-	.question-form-inner3 {
+	.question-form-inner3, .question-form-inner4, .question-form-inner5, .question-form-inner6, .question-form-inner7 {
 		padding: 0;
 		width: auto;
 		margin: 30px;
@@ -3702,6 +3726,11 @@ input::-webkit-input-placeholder {
 	.question-form-inner3 .form__button {
 		width: 293px;
 	}
+
+	.question-form-inner4 .form__button, .question-form-inner5 .form__button, .question-form-inner6 .form__button, .question-form-inner7 .form__button {
+		width: 293px;
+	}
+
 	.question-form-inner2 .form__button {
 		width: 293px;
 	}
@@ -3737,6 +3766,9 @@ input::-webkit-input-placeholder {
 	.question-form-inner3 .dropdown-content a, .question-form-inner1 .dropdown-content a {
 		width: 100%;
 	}
+	.question-form-inner4 .dropdown-content a, .question-form-inner5 .dropdown-content a, .question-form-inner6 .dropdown-content a, .question-form-inner7 .dropdown-content a {
+		width: 100%;
+	}
 }
 @media screen and (max-width: 375px) {
 	
@@ -3770,6 +3802,9 @@ input::-webkit-input-placeholder {
 		width: 100%;
 	}
 	.question-form-inner3 .dropbtn {
+		width: 410px;
+	}
+	.question-form-inner4 .dropbtn, .question-form-inner5 .dropbtn. .question-form-inner6 .dropbtn, .question-form-inner7 .dropbtn {
 		width: 410px;
 	}
 	.calc-service__button {

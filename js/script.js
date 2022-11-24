@@ -168,21 +168,42 @@ for (let i = 0; i < tabs.length; i++) {
     tabsContent[i].classList.add("active");
   }, false);
 }
+
+
 // ...........Форма удалить...............
 var gopop = document.querySelectorAll('.gopop');
 var gopop2 = document.querySelectorAll('.gopop2');
 var gopop3 = document.querySelectorAll('.gopop3');
+var gopop4 = document.querySelectorAll('.gopop4');
+var gopop5 = document.querySelectorAll('.gopop5');
+var gopop6 = document.querySelectorAll('.gopop6');
+var gopop7 = document.querySelectorAll('.gopop7');
 var questionform  =  document.getElementsByClassName("question-form")[0];
 var questionforminner  =  document.getElementsByClassName("question-form-inner1")[0];
 var questionforminner2  =  document.getElementsByClassName("question-form-inner2")[0];
 var questionforminner3  =  document.getElementsByClassName("question-form-inner3")[0];
+var questionforminner4  =  document.getElementsByClassName("question-form-inner4")[0];
+var questionforminner5  =  document.getElementsByClassName("question-form-inner5")[0];
+var questionforminner6  =  document.getElementsByClassName("question-form-inner6")[0];
+var questionforminner7  =  document.getElementsByClassName("question-form-inner7")[0];
 var closeform  =  document.getElementById("closeform");
 var closeform2  =  document.getElementById("closeform2");
 var closeform3  =  document.getElementById("closeform3");
+var closeform4  =  document.getElementById("closeform4");
+var closeform5  =  document.getElementById("closeform5");
+var closeform6  =  document.getElementById("closeform6");
+var closeform7  =  document.getElementById("closeform7");
+
 
 closeform.addEventListener("click", closeQuestionForm, false);
 closeform2.addEventListener("click", closeQuestionForm2, false);
 closeform3.addEventListener("click", closeQuestionForm3, false);
+closeform4.addEventListener("click", closeQuestionForm4, false);
+closeform5.addEventListener("click", closeQuestionForm5, false);
+closeform6.addEventListener("click", closeQuestionForm6, false);
+closeform7.addEventListener("click", closeQuestionForm7, false);
+
+
 
 for (var i = 0; i < gopop.length; i++) {
   gopop[i].addEventListener("click", openQuestionForm, false);
@@ -193,6 +214,19 @@ for (var i = 0; i < gopop2.length; i++) {
 for (var i = 0; i < gopop3.length; i++) {
   gopop3[i].addEventListener("click", openQuestionForm3, false);
 }
+for (var i = 0; i < gopop4.length; i++) {
+  gopop4[i].addEventListener("click", openQuestionForm4, false);
+}
+for (var i = 0; i < gopop5.length; i++) {
+  gopop5[i].addEventListener("click", openQuestionForm5, false);
+}
+for (var i = 0; i < gopop6.length; i++) {
+  gopop6[i].addEventListener("click", openQuestionForm6, false);
+}
+for (var i = 0; i < gopop7.length; i++) {
+  gopop7[i].addEventListener("click", openQuestionForm7, false);
+}
+
 
 function openQuestionForm(){
   questionform.classList.add("active1");
@@ -212,6 +246,32 @@ function openQuestionForm3(){
     questionforminner3.classList.add("active");
   }, 100);
 }
+function openQuestionForm4(){
+  questionform.classList.add("active4");
+  setTimeout(function() { 
+    questionforminner4.classList.add("active");
+  }, 100);
+}
+function openQuestionForm5(){
+  questionform.classList.add("active5");
+  setTimeout(function() { 
+    questionforminner5.classList.add("active");
+  }, 100);
+}
+function openQuestionForm6(){
+  questionform.classList.add("active6");
+  setTimeout(function() { 
+    questionforminner6.classList.add("active");
+  }, 100);
+}
+function openQuestionForm7(){
+  questionform.classList.add("active7");
+  setTimeout(function() { 
+    questionforminner7.classList.add("active");
+  }, 100);
+}
+
+
 function closeQuestionForm(){
   questionform.classList.remove("active1");
   questionforminner.classList.remove("active");
@@ -224,6 +284,23 @@ function closeQuestionForm3(){
   questionform.classList.remove("active3");
   questionforminner3.classList.remove("active");
 }
+function closeQuestionForm4(){
+  questionform.classList.remove("active4");
+  questionforminner4.classList.remove("active");
+}
+function closeQuestionForm5(){
+  questionform.classList.remove("active5");
+  questionforminner5.classList.remove("active");
+}
+function closeQuestionForm6(){
+  questionform.classList.remove("active6");
+  questionforminner6.classList.remove("active");
+}
+function closeQuestionForm7(){
+  questionform.classList.remove("active7");
+  questionforminner7.classList.remove("active");
+}
+
 
 
 // -----Карта------------
