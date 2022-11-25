@@ -2089,9 +2089,10 @@ body {
 	margin-bottom: 15px;
 }
 
-.card__services-link {
+.card__services-pop-up {
 	display: flex;
 	padding: 20px;
+	cursor: pointer;
 }
 
 .card__services-img {
@@ -3059,19 +3060,51 @@ input::-webkit-input-placeholder {
 	max-width: 410px;
 }
 
+
 /* modal (pop-up) - modal__form */
 
 .modal__form {
-	/* display: none; */
+	display: none;
 	position: absolute;
 	top: 20px;
 	right: 0;
-	z-index: 1000;
+	z-index: 1100;
 	background-color: #fff;
 
 	font-size: 15px;
 	line-height: 167%;
 	color: #05141F;
+}
+
+.modal__form-credit, .modal__form-trade-in, .modal__form-insurance, .modal__form-buy {
+	display: none;
+}
+
+.modal__form.active, .modal__form-credit.active, .modal__form-trade-in.active, .modal__form-insurance.active, .modal__form-buy.active {
+	display: block;
+}
+
+.modal__pop-up {
+	display: none;
+}
+
+.modal__pop-up.active {
+	z-index: 1000;
+  display: flex;
+  flex: 0 1 auto;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  will-change: transform;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #585858e3;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
 }
 
 .modal__container {
