@@ -168,7 +168,7 @@
                   
                   
                 </div>
-                <button class="card__button card__line btn2 gopop2" type="button" aria-label="Заказать звонок">
+                <button class="card__button card__line btn2 gomodal1" type="button" aria-label="Заказать звонок">
                   <span class="button__text">Оставить заявку на просмотр</span>
                 </button>
                 
@@ -180,7 +180,7 @@
 
                   <section class="card__content">
                     <div class="card__gallery">
-                      <div class="card__container-main">
+                      <div class="card__container-main ">
                         
                         <img class="card__img-main" src="../assets/img/card-main.jpg" alt="Kia">
 
@@ -824,569 +824,577 @@
         <div class="modal__pop-up">
 
             <!-- modal__trade-in -->
-            <div class="modal__form modal__form-trade-in" id="modal__trade-in">
-                <div class="modal__close">
-                    <button class="modal__close-btn">
-                        <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
-                        <span class="modal__close-text">Закрыть</span>
-                    </button>
-                </div>
+            <div class="modal__overlay">
+                <div class="modal__form modal__form-trade-in" id="modal__trade-in">
+                    <div class="modal__close">
+                        <button class="modal__close-btn">
+                            <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
+                            <span class="modal__close-text">Закрыть</span>
+                        </button>
+                    </div>
 
-                <section class="modal__hero modal__hero-trade-in">
-                    <div class="modal__container">
-                        <div class="modal__innner modal__hero-innner">
-                            <h2 class="modal__title modal__trade-in-title title-h2">Обмен автомобиля с пробегом</h2>
+                    <section class="modal__hero modal__hero-trade-in">
+                        <div class="modal__container">
+                            <div class="modal__innner modal__hero-innner">
+                                <h2 class="modal__title modal__trade-in-title title-h2">Обмен автомобиля с пробегом</h2>
 
-                            <button class="modal__button modal__hero-btn btn2 gopop4" type="button" aria-label="Записаться">
+                                <button class="modal__button modal__hero-btn btn2 gopop4" type="button" aria-label="Записаться">
+                                    <span class="button__text">Оставить заявку</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="modal__desc trade-in__desc">
+                        <div class="modal__container">
+                            <p class="modal__desc-text trade-in__desc-text">
+                                Компания «Шувалово-Моторс» предоставляет своим клиентам возможность приобретения автомобилей по системе Trade-in. Мы принимаем в зачёт практически любые автомобили.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="modal__advan modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__advan-title modal__section-title title-h2">
+                                Преимущества
+                            </h3>
+                            <ul class="modal__advan-list">
+                                <li class="modal__advan-item">
+                                    <img class="modal__advan-img" src="../assets/icon/time.svg" alt="time icon">
+                                    <div class="modal__advan-right">
+                                        <h3 class="advan__name title-h3">
+                                            Экономия времени
+                                        </h3>
+                                        <p class="modal__advan-text modal__item-text">
+                                            Вам не нужно тратить его на поиск покупателей, все вопросы по реализации вашего автомобиля мы возьмём на себя.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="modal__advan-item">
+                                    <img class="modal__advan-img" src="../assets/icon/shield.svg" alt="shield icon">
+                                    <div class="modal__advan-right">
+                                        <h3 class="advan__name title-h3">
+                                            Вы обеспечиваете себе безопасность
+                                        </h3>
+                                        <p class="modal__advan-text modal__item-text">
+                                            Мы гарантируем вам соблюдение всех договорённостей.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="modal__advan-item">
+                                    <img class="modal__advan-img" src="../assets/icon/insurance.svg" alt="insurance icon">
+                                    <div class="modal__advan-right">
+                                        <h3 class="advan__name title-h3">
+                                            Мы берём на себя все организационные вопросы и оформление продажи
+                                        </h3>
+                                        <p class="modal__advan-text modal__item-text"></p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="modal__desc trade-in__desc">
+                        <div class="modal__container">
+                            <p class="modal__desc-text trade-in__desc-text">
+                                Для того, чтобы купить новый автомобиль, используя систему Trade-In, необходимо пройти оценку вашего автомобиля. По результатам осмотра и диагностики согласовывается и определяется окончательная стоимость, которая идёт в зачёт нового автомобиля.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="modal__steps modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__steps-title modal__section-title title-h2">
+                                Как обменять автомобиль
+                            </h3>
+                            <ul class="modal__steps-list modal__list d-flex">
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/price_doc.svg" alt="price doc icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Шаг 1
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Приезжаете к нам. Мы оцениваем ваш авто и говорим стоимость выкупа
+                                    </p>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/step-1.svg" alt="car icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Шаг 2
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Выбираем новую модель, которую вы хотите приобрести. Проводим тест-драйв
+                                    </p>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/step-3.svg" alt="note icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Шаг 3
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Решаем юридические моменты
+                                    </p>
+                                </li>
+
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/car_in_garage.svg" alt="car in garage icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Шаг 4
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Вы уезжаете на новом авто с учётом стоимости вашего автомобиля
+                                    </p>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <div class="modal__btn">
+                        <div class="modal__container">
+                            <button class="modal__button modal__button-mb btn2 gopop4" type="button" aria-label="Записаться">
                                 <span class="button__text">Оставить заявку</span>
                             </button>
                         </div>
                     </div>
-                </section>
-
-                <section class="modal__desc trade-in__desc">
-                    <div class="modal__container">
-                        <p class="modal__desc-text trade-in__desc-text">
-                            Компания «Шувалово-Моторс» предоставляет своим клиентам возможность приобретения автомобилей по системе Trade-in. Мы принимаем в зачёт практически любые автомобили.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="modal__advan modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__advan-title modal__section-title title-h2">
-                            Преимущества
-                        </h3>
-                        <ul class="modal__advan-list">
-                            <li class="modal__advan-item">
-                                <img class="modal__advan-img" src="../assets/icon/time.svg" alt="time icon">
-                                <div class="modal__advan-right">
-                                    <h3 class="advan__name title-h3">
-                                        Экономия времени
-                                    </h3>
-                                    <p class="modal__advan-text modal__item-text">
-                                        Вам не нужно тратить его на поиск покупателей, все вопросы по реализации вашего автомобиля мы возьмём на себя.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="modal__advan-item">
-                                <img class="modal__advan-img" src="../assets/icon/shield.svg" alt="shield icon">
-                                <div class="modal__advan-right">
-                                    <h3 class="advan__name title-h3">
-                                        Вы обеспечиваете себе безопасность
-                                    </h3>
-                                    <p class="modal__advan-text modal__item-text">
-                                        Мы гарантируем вам соблюдение всех договорённостей.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="modal__advan-item">
-                                <img class="modal__advan-img" src="../assets/icon/insurance.svg" alt="insurance icon">
-                                <div class="modal__advan-right">
-                                    <h3 class="advan__name title-h3">
-                                        Мы берём на себя все организационные вопросы и оформление продажи
-                                    </h3>
-                                    <p class="modal__advan-text modal__item-text"></p>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="modal__desc trade-in__desc">
-                    <div class="modal__container">
-                        <p class="modal__desc-text trade-in__desc-text">
-                            Для того, чтобы купить новый автомобиль, используя систему Trade-In, необходимо пройти оценку вашего автомобиля. По результатам осмотра и диагностики согласовывается и определяется окончательная стоимость, которая идёт в зачёт нового автомобиля.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="modal__steps modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__steps-title modal__section-title title-h2">
-                            Как обменять автомобиль
-                        </h3>
-                        <ul class="modal__steps-list modal__list d-flex">
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/price_doc.svg" alt="price doc icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Шаг 1
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Приезжаете к нам. Мы оцениваем ваш авто и говорим стоимость выкупа
-                                </p>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/step-1.svg" alt="car icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Шаг 2
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Выбираем новую модель, которую вы хотите приобрести. Проводим тест-драйв
-                                </p>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/step-3.svg" alt="note icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Шаг 3
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Решаем юридические моменты
-                                </p>
-                            </li>
-
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/car_in_garage.svg" alt="car in garage icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Шаг 4
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Вы уезжаете на новом авто с учётом стоимости вашего автомобиля
-                                </p>
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-
-                <div class="modal__btn">
-                    <div class="modal__container">
-                        <button class="modal__button modal__button-mb btn2 gopop4" type="button" aria-label="Записаться">
-                            <span class="button__text">Оставить заявку</span>
-                        </button>
-                    </div>
+                    
                 </div>
-                
             </div>
 
 
 
             <!-- modal__insurance -->
-            <div class="modal__form modal__form-insurance" id="modal__insurance">
-                <div class="modal__close">
-                    <button class="modal__close-btn">
-                        <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
-                        <span class="modal__close-text">Закрыть</span>
-                    </button>
-                </div>
+            <div class="modal__overlay">
+                <div class="modal__form modal__form-insurance" id="modal__insurance">
+                    <div class="modal__close">
+                        <button class="modal__close-btn">
+                            <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
+                            <span class="modal__close-text">Закрыть</span>
+                        </button>
+                    </div>
 
-                <section class="modal__hero modal__hero-insurance">
-                    <div class="modal__container">
-                        <div class="modal__innner modal__hero-innner">
-                            <h2 class="modal__title modal__insurance-title title-h2">Страхование — КАСКО</h2>
+                    <section class="modal__hero modal__hero-insurance">
+                        <div class="modal__container">
+                            <div class="modal__innner modal__hero-innner">
+                                <h2 class="modal__title modal__insurance-title title-h2">Страхование — КАСКО</h2>
 
-                            <p class="modal__subtitle modal__insurance-subtitle">Мы предлагаем специальные условия страхования КАСКО</p>
+                                <p class="modal__subtitle modal__insurance-subtitle">Мы предлагаем специальные условия страхования КАСКО</p>
 
-                            <button class="modal__button modal__hero-btn btn2 gopop5" type="button" aria-label="Записаться">
+                                <button class="modal__button modal__hero-btn btn2 gopop5" type="button" aria-label="Записаться">
+                                    <span class="button__text">Оставить заявку</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="modal__desc insurance__desc">
+                        <div class="modal__container">
+                            <p class="modal__desc-text insurance__desc-text">
+                                Специально для вас мы предлагаем эксклюзивные условия по страхованию вашего автомобиля. Мы сотрудничаем с ведущими страховыми компаниями на рынке КАСКО, чтобы обеспечить самую надёжную защиту вашего автомобиля.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="modal__advan modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__advan-title modal__section-title title-h2">
+                                Преимущества
+                            </h3>
+                            <ul class="modal__advan-list">
+                                <li class="modal__advan-item">
+                                    <img class="modal__advan-img" src="../assets/icon/price_doc.svg" alt="price icon">
+                                    <div class="modal__advan-right">
+                                        <h3 class="advan__name title-h3">
+                                            Выгодно
+                                        </h3>
+                                        <p class="modal__advan-text modal__item-text">
+                                            Вы можете оформить страховку КАСКО с ограниченным набором опций по специальной цене.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="modal__advan-item">
+                                    <img class="modal__advan-img" src="../assets/icon/shield.svg" alt="shield icon">
+                                    <div class="modal__advan-right">
+                                        <h3 class="advan__name title-h3">
+                                            Надежно
+                                        </h3>
+                                        <p class="modal__advan-text modal__item-text">
+                                            Ремонт производится только на станциях официальных дилеров Киа, вы получите гарантированно качественный сервис и обслуживание.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="modal__advan-item">
+                                    <img class="modal__advan-img" src="../assets/icon/graph.svg" alt="grath icon">
+                                    <div class="modal__advan-right">
+                                        <h3 class="advan__name title-h3">
+                                            Удобно
+                                        </h3>
+                                        <p class="modal__advan-text modal__item-text">
+                                            Вы сможете подобрать самый оптимальный для вас страховой продукт по цене и наполнению. Наши страховые партнёры являются лидерами рынка в России и предоставляют услуги на самом высоком уровне.
+                                        </p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </section>
+
+                    
+
+                    <section class="modal__partners modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__partners-title modal__section-title title-h2">
+                                Партнеры программы
+                            </h3>
+                            <ul class="modal__steps-list modal__partners-list modal__list d-flex">
+                                <li class="modal__item modal__partners-item">
+                                    <img class="modal__item-img modal__partners-img" src="../assets/img/logo-vsk.png" alt="logo vsk">
+                                </li>
+                                <li class="modal__item modal__partners-item">
+                                    <img class="modal__item-img modal__partners-img" src="../assets/img/logo-rgs.png" alt="logo rgs">
+                                </li>
+                                <li class="modal__item modal__partners-item">
+                                    <img class="modal__item-img modal__partners-img" src="../assets/img/logo-igs.png" alt="logo igs">
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    
+
+                    <div class="modal__btn">
+                        <div class="modal__container">
+                            <button class="modal__button modal__button-mb btn2 gopop5" type="button" aria-label="Записаться">
                                 <span class="button__text">Оставить заявку</span>
                             </button>
                         </div>
                     </div>
-                </section>
-
-                <section class="modal__desc insurance__desc">
-                    <div class="modal__container">
-                        <p class="modal__desc-text insurance__desc-text">
-                            Специально для вас мы предлагаем эксклюзивные условия по страхованию вашего автомобиля. Мы сотрудничаем с ведущими страховыми компаниями на рынке КАСКО, чтобы обеспечить самую надёжную защиту вашего автомобиля.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="modal__advan modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__advan-title modal__section-title title-h2">
-                            Преимущества
-                        </h3>
-                        <ul class="modal__advan-list">
-                            <li class="modal__advan-item">
-                                <img class="modal__advan-img" src="../assets/icon/price_doc.svg" alt="price icon">
-                                <div class="modal__advan-right">
-                                    <h3 class="advan__name title-h3">
-                                        Выгодно
-                                    </h3>
-                                    <p class="modal__advan-text modal__item-text">
-                                        Вы можете оформить страховку КАСКО с ограниченным набором опций по специальной цене.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="modal__advan-item">
-                                <img class="modal__advan-img" src="../assets/icon/shield.svg" alt="shield icon">
-                                <div class="modal__advan-right">
-                                    <h3 class="advan__name title-h3">
-                                        Надежно
-                                    </h3>
-                                    <p class="modal__advan-text modal__item-text">
-                                        Ремонт производится только на станциях официальных дилеров Киа, вы получите гарантированно качественный сервис и обслуживание.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="modal__advan-item">
-                                <img class="modal__advan-img" src="../assets/icon/graph.svg" alt="grath icon">
-                                <div class="modal__advan-right">
-                                    <h3 class="advan__name title-h3">
-                                        Удобно
-                                    </h3>
-                                    <p class="modal__advan-text modal__item-text">
-                                        Вы сможете подобрать самый оптимальный для вас страховой продукт по цене и наполнению. Наши страховые партнёры являются лидерами рынка в России и предоставляют услуги на самом высоком уровне.
-                                    </p>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </section>
-
-                
-
-                <section class="modal__partners modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__partners-title modal__section-title title-h2">
-                            Партнеры программы
-                        </h3>
-                        <ul class="modal__steps-list modal__partners-list modal__list d-flex">
-                            <li class="modal__item modal__partners-item">
-                                <img class="modal__item-img modal__partners-img" src="../assets/img/logo-vsk.png" alt="logo vsk">
-                            </li>
-                            <li class="modal__item modal__partners-item">
-                                <img class="modal__item-img modal__partners-img" src="../assets/img/logo-rgs.png" alt="logo rgs">
-                            </li>
-                            <li class="modal__item modal__partners-item">
-                                <img class="modal__item-img modal__partners-img" src="../assets/img/logo-igs.png" alt="logo igs">
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-
-                
-
-                <div class="modal__btn">
-                    <div class="modal__container">
-                        <button class="modal__button modal__button-mb btn2 gopop5" type="button" aria-label="Записаться">
-                            <span class="button__text">Оставить заявку</span>
-                        </button>
-                    </div>
+                    
                 </div>
-                
             </div>
 
 
-
+            
             <!-- modal__credit -->
-            <div class="modal__form modal__form-credit" id="modal__credit">
-                <div class="modal__close">
-                    <button class="modal__close-btn">
-                        <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
-                        <span class="modal__close-text">Закрыть</span>
-                    </button>
-                </div>
+            <div class="modal__overlay">
+                <div class="modal__form modal__form-credit" id="modal__credit">
+                    <div class="modal__close">
+                        <button class="modal__close-btn">
+                            <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
+                            <span class="modal__close-text">Закрыть</span>
+                        </button>
+                    </div>
 
-                <section class="modal__hero modal__hero-credit">
-                    <div class="modal__container">
-                        <div class="modal__innner modal__hero-innner">
-                            <h2 class="modal__title modal__credit-title title-h2">Автомобили с пробегом в кредит</h2>
+                    <section class="modal__hero modal__hero-credit">
+                        <div class="modal__container">
+                            <div class="modal__innner modal__hero-innner">
+                                <h2 class="modal__title modal__credit-title title-h2">Автомобили с пробегом в кредит</h2>
 
-                            <p class="modal__subtitle modal__credit-subtitle">Мы покажем предложения всех банков, а вам останется лишь выбрать лучшие условия кредитования</p>
+                                <p class="modal__subtitle modal__credit-subtitle">Мы покажем предложения всех банков, а вам останется лишь выбрать лучшие условия кредитования</p>
 
-                            <button class="modal__button modal__hero-btn btn2 gopop6" type="button" aria-label="Записаться">
-                                <span class="button__text">Оставить заявку</span>
+                                <button class="modal__button modal__hero-btn btn2 gopop6" type="button" aria-label="Записаться">
+                                    <span class="button__text">Оставить заявку</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="modal__desc credit__desc">
+                        <div class="modal__container">
+                            <p class="modal__desc-text credit__desc-text">
+                                Широкая линейка финансовых программ, которые позволяют клиенту сделать доступным любой автомобиль. Программы нацелены на снижение затрат клиента при покупке автомобиля в кредит путем снижения кредитных ставок, ежемесячных платежей и стоимости владения автомобилем.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="modal__steps modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__steps-title modal__section-title title-h2">
+                                Преимущества
+                            </h3>
+                            <ul class="modal__steps-list modal__list d-flex">
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/Balance.svg" alt="balance doc icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Выгодно
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Комфортные ставки по кредиту от партнёров программы
+                                    </p>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/timer.svg" alt="timer icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Быстро
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Высокая скорость одобрения и оформления сделки
+                                    </p>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/available.svg" alt="available icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Удобно
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Подача заявки онлайн или в официальном дилерском центре
+                                    </p>
+                                </li>
+
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/percent.svg" alt="percent icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Доступно
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Клиенту доступен первоначальный взнос от 0%
+                                    </p>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <section class="modal__steps modal__steps-credit modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__steps-title modal__section-title title-h2">
+                                Получение кредита в Шувалово-Моторс
+                            </h3>
+                            <ul class="modal__steps-list modal__list-credit modal__list d-flex">
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/step-1.svg" alt="car icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Выбираете автомобиль
+                                    </h3>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/credit.svg" alt="credit icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Выбираете программу кредитования и комфортные условия 
+                                    </h3>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/demand.svg" alt="demand icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Подаете заявку на одобрение кредита
+                                    </h3>
+                                </li>
+
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/step-3.svg" alt="note icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Оформляете страховку КАСКО и подписываете кредитный договор. Теперь автомобиль Ваш!
+                                    </h3>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <section class="modal__partners modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__partners-title modal__section-title title-h2">
+                                Партнеры программы
+                            </h3>
+                            <ul class="modal__steps-list modal__partners-list modal__list d-flex">
+                                <li class="modal__item modal__partners-item">
+                                    <img class="modal__item-img modal__partners-img" src="../assets/img/logo-vsk.png" alt="logo vsk">
+                                </li>
+                                <li class="modal__item modal__partners-item">
+                                    <img class="modal__item-img modal__partners-img" src="../assets/img/logo-rgs.png" alt="logo rgs">
+                                </li>
+                                <li class="modal__item modal__partners-item">
+                                    <img class="modal__item-img modal__partners-img" src="../assets/img/logo-igs.png" alt="logo igs">
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <div class="modal__btn">
+                        <div class="modal__container">
+                            <button class="modal__button modal__button-mb btn2 gopop6" type="button" aria-label="Записаться">
+                                <span class="button__text">Рассчитать кредит</span>
                             </button>
                         </div>
                     </div>
-                </section>
-
-                <section class="modal__desc credit__desc">
-                    <div class="modal__container">
-                        <p class="modal__desc-text credit__desc-text">
-                            Широкая линейка финансовых программ, которые позволяют клиенту сделать доступным любой автомобиль. Программы нацелены на снижение затрат клиента при покупке автомобиля в кредит путем снижения кредитных ставок, ежемесячных платежей и стоимости владения автомобилем.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="modal__steps modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__steps-title modal__section-title title-h2">
-                            Преимущества
-                        </h3>
-                        <ul class="modal__steps-list modal__list d-flex">
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/Balance.svg" alt="balance doc icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Выгодно
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Комфортные ставки по кредиту от партнёров программы
-                                </p>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/timer.svg" alt="timer icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Быстро
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Высокая скорость одобрения и оформления сделки
-                                </p>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/available.svg" alt="available icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Удобно
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Подача заявки онлайн или в официальном дилерском центре
-                                </p>
-                            </li>
-
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/percent.svg" alt="percent icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Доступно
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Клиенту доступен первоначальный взнос от 0%
-                                </p>
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-
-                <section class="modal__steps modal__steps-credit modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__steps-title modal__section-title title-h2">
-                            Получение кредита в Шувалово-Моторс
-                        </h3>
-                        <ul class="modal__steps-list modal__list-credit modal__list d-flex">
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/step-1.svg" alt="car icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Выбираете автомобиль
-                                </h3>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/credit.svg" alt="credit icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Выбираете программу кредитования и комфортные условия 
-                                </h3>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/demand.svg" alt="demand icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Подаете заявку на одобрение кредита
-                                </h3>
-                            </li>
-
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/step-3.svg" alt="note icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Оформляете страховку КАСКО и подписываете кредитный договор. Теперь автомобиль Ваш!
-                                </h3>
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-
-                <section class="modal__partners modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__partners-title modal__section-title title-h2">
-                            Партнеры программы
-                        </h3>
-                        <ul class="modal__steps-list modal__partners-list modal__list d-flex">
-                            <li class="modal__item modal__partners-item">
-                                <img class="modal__item-img modal__partners-img" src="../assets/img/logo-vsk.png" alt="logo vsk">
-                            </li>
-                            <li class="modal__item modal__partners-item">
-                                <img class="modal__item-img modal__partners-img" src="../assets/img/logo-rgs.png" alt="logo rgs">
-                            </li>
-                            <li class="modal__item modal__partners-item">
-                                <img class="modal__item-img modal__partners-img" src="../assets/img/logo-igs.png" alt="logo igs">
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-
-                <div class="modal__btn">
-                    <div class="modal__container">
-                        <button class="modal__button modal__button-mb btn2 gopop6" type="button" aria-label="Записаться">
-                            <span class="button__text">Рассчитать кредит</span>
-                        </button>
-                    </div>
+                    
                 </div>
-                
             </div>
 
 
 
             <!-- modal__buy -->
-            <div class="modal__form modal__form-buy" id="modal__buy">
-                <div class="modal__close">
-                    <button class="modal__close-btn">
-                        <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
-                        <span class="modal__close-text">Закрыть</span>
-                    </button>
-                </div>
+            <div class="modal__overlay">
+                <div class="modal__form modal__form-buy" id="modal__buy">
+                    <div class="modal__close">
+                        <button class="modal__close-btn">
+                            <img src="../assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
+                            <span class="modal__close-text">Закрыть</span>
+                        </button>
+                    </div>
 
-                <section class="modal__hero modal__hero-buy">
-                    <div class="modal__container">
-                        <div class="modal__innner modal__hero-innner">
-                            <h2 class="modal__title modal__buy-title title-h2">Выкуп авто<br/>в день обращения</h2>
+                    <section class="modal__hero modal__hero-buy">
+                        <div class="modal__container">
+                            <div class="modal__innner modal__hero-innner">
+                                <h2 class="modal__title modal__buy-title title-h2">Выкуп авто<br/>в день обращения</h2>
 
-                            <p class="modal__subtitle modal__buy-subtitle">Оценка 9 из 10 автомобилей оправдывает ожидания</p>
+                                <p class="modal__subtitle modal__buy-subtitle">Оценка 9 из 10 автомобилей оправдывает ожидания</p>
 
-                            <button class="modal__button modal__hero-btn btn2 gopop7" type="button" aria-label="Записаться">
-                                <span class="button__text">Оставить заявку</span>
+                                <button class="modal__button modal__hero-btn btn2 gopop7" type="button" aria-label="Записаться">
+                                    <span class="button__text">Оставить заявку</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="modal__desc buy__desc">
+                        <div class="modal__container">
+                            <p class="modal__desc-text buy__desc-text">
+                                В автосалоне Шувалово-Моторс можно продать автомобиль любой марки, модели, модификации российского и зарубежного производства. При этом техническое состояние решающего значения не имеет, хотя и сказывается на окончательной стоимости. Поэтому выкупаются целые, побывавшие в дорожно-транспортном происшествии, премиального класса автотранспортные средства. Кроме того, при максимальной срочности выкупаются авто, находящиеся под залогом, в лизинге, купленные по невыплаченному до конца кредиту и те, с которым имеются проблемы с органами ГИБДД.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="modal__steps modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__steps-title modal__section-title title-h2">
+                                Порядок выкупа автомобиля
+                            </h3>
+                            <ul class="modal__steps-list modal__list d-flex">
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/call.svg" alt="call icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Оставить заявку
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Оставьте заявку на сайте или позвоните нам
+                                    </p>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/step-3.svg" alt="note icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Техническая диагностика
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Мы бесплатно оценим и проведём техническую диагностику по 110 пунктам, проверим юридическую чистоту.
+                                    </p>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/credit.svg" alt="credit icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Оформление документов
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Возьмём на себя оформление документов для выкупа авто.
+                                    </p>
+                                </li>
+
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/wallet.svg" alt="wallet icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Получение выплаты
+                                    </h3>
+                                    <p class="modal__item-text modal__steps-text">
+                                        Вы получите максимальную выплату за авто.
+                                    </p>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <section class="modal__steps modal__steps-buy modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__steps-title modal__section-title title-h2">
+                                Выкуп авто осуществляется по 4‑м документам:
+                            </h3>
+                            <ul class="modal__steps-list modal__list-credit modal__list d-flex">
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Паспорт транспортного средства (ПТС)
+                                    </h3>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Паспорт собственника транспортного средства
+                                    </h3>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Свидетельство о регистрации (СТС)
+                                    </h3>
+                                </li>
+
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Нотариальная доверенность на ТС и паспорт продавца
+                                    </h3>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <section class="modal__steps modal__steps-buy modal__section">
+                        <div class="modal__container">
+                            <h3 class="modal__steps-title modal__section-title title-h2">
+                                Преимущества Шувалово-Моторс
+                            </h3>
+                            <ul class="modal__steps-list modal__list-credit modal__list d-flex">
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/insurance.svg" alt="insurance icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Возьмёт на себя все заботы, связанные с продажей
+                                    </h3>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/time.svg" alt="time icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Сэкономим ваше время и предложим справедливую цену
+                                    </h3>
+                                </li>
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/price_doc.svg" alt="price doc icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Рассчитаем максимально точную рыночную стоимость вашего автомобиля
+                                    </h3>
+                                </li>
+
+                                <li class="modal__item modal__steps-item">
+                                    <img class="modal__item-img modal__steps-img" src="../assets/icon/car_revert.svg" alt="car revert icon">
+                                    <h3 class="modal__item-title modal__steps-title title-h3">
+                                        Стоимость вашей машины можно зачесть в счёт покупки с дополнительными скидками и выгодами
+                                    </h3>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </section>
+                    
+                    <div class="modal__btn">
+                        <div class="modal__container">
+                            <button class="modal__button modal__button-mb btn2 gopop7" type="button" aria-label="Записаться">
+                                <span class="button__text">Рассчитать кредит</span>
                             </button>
                         </div>
                     </div>
-                </section>
 
-                <section class="modal__desc buy__desc">
-                    <div class="modal__container">
-                        <p class="modal__desc-text buy__desc-text">
-                            В автосалоне Шувалово-Моторс можно продать автомобиль любой марки, модели, модификации российского и зарубежного производства. При этом техническое состояние решающего значения не имеет, хотя и сказывается на окончательной стоимости. Поэтому выкупаются целые, побывавшие в дорожно-транспортном происшествии, премиального класса автотранспортные средства. Кроме того, при максимальной срочности выкупаются авто, находящиеся под залогом, в лизинге, купленные по невыплаченному до конца кредиту и те, с которым имеются проблемы с органами ГИБДД.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="modal__steps modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__steps-title modal__section-title title-h2">
-                            Порядок выкупа автомобиля
-                        </h3>
-                        <ul class="modal__steps-list modal__list d-flex">
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/call.svg" alt="call icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Оставить заявку
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Оставьте заявку на сайте или позвоните нам
-                                </p>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/step-3.svg" alt="note icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Техническая диагностика
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Мы бесплатно оценим и проведём техническую диагностику по 110 пунктам, проверим юридическую чистоту.
-                                </p>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/credit.svg" alt="credit icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Оформление документов
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Возьмём на себя оформление документов для выкупа авто.
-                                </p>
-                            </li>
-
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/wallet.svg" alt="wallet icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Получение выплаты
-                                </h3>
-                                <p class="modal__item-text modal__steps-text">
-                                    Вы получите максимальную выплату за авто.
-                                </p>
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-
-                <section class="modal__steps modal__steps-buy modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__steps-title modal__section-title title-h2">
-                            Выкуп авто осуществляется по 4‑м документам:
-                        </h3>
-                        <ul class="modal__steps-list modal__list-credit modal__list d-flex">
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Паспорт транспортного средства (ПТС)
-                                </h3>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Паспорт собственника транспортного средства
-                                </h3>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Свидетельство о регистрации (СТС)
-                                </h3>
-                            </li>
-
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/check.svg" alt="check icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Нотариальная доверенность на ТС и паспорт продавца
-                                </h3>
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-
-                <section class="modal__steps modal__steps-buy modal__section">
-                    <div class="modal__container">
-                        <h3 class="modal__steps-title modal__section-title title-h2">
-                            Преимущества Шувалово-Моторс
-                        </h3>
-                        <ul class="modal__steps-list modal__list-credit modal__list d-flex">
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/insurance.svg" alt="insurance icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Возьмёт на себя все заботы, связанные с продажей
-                                </h3>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/time.svg" alt="time icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Сэкономим ваше время и предложим справедливую цену
-                                </h3>
-                            </li>
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/price_doc.svg" alt="price doc icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Рассчитаем максимально точную рыночную стоимость вашего автомобиля
-                                </h3>
-                            </li>
-
-                            <li class="modal__item modal__steps-item">
-                                <img class="modal__item-img modal__steps-img" src="../assets/icon/car_revert.svg" alt="car revert icon">
-                                <h3 class="modal__item-title modal__steps-title title-h3">
-                                    Стоимость вашей машины можно зачесть в счёт покупки с дополнительными скидками и выгодами
-                                </h3>
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </section>
-                
-                <div class="modal__btn">
-                    <div class="modal__container">
-                        <button class="modal__button modal__button-mb btn2 gopop7" type="button" aria-label="Записаться">
-                            <span class="button__text">Рассчитать кредит</span>
-                        </button>
-                    </div>
                 </div>
-
             </div>
 
         </div>

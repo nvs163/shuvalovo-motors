@@ -178,6 +178,8 @@ var gopop4 = document.querySelectorAll('.gopop4');
 var gopop5 = document.querySelectorAll('.gopop5');
 var gopop6 = document.querySelectorAll('.gopop6');
 var gopop7 = document.querySelectorAll('.gopop7');
+
+
 var questionform  =  document.getElementsByClassName("question-form")[0];
 var questionforminner  =  document.getElementsByClassName("question-form-inner1")[0];
 var questionforminner2  =  document.getElementsByClassName("question-form-inner2")[0];
@@ -186,6 +188,8 @@ var questionforminner4  =  document.getElementsByClassName("question-form-inner4
 var questionforminner5  =  document.getElementsByClassName("question-form-inner5")[0];
 var questionforminner6  =  document.getElementsByClassName("question-form-inner6")[0];
 var questionforminner7  =  document.getElementsByClassName("question-form-inner7")[0];
+
+
 var closeform  =  document.getElementById("closeform");
 var closeform2  =  document.getElementById("closeform2");
 var closeform3  =  document.getElementById("closeform3");
@@ -304,99 +308,84 @@ function closeQuestionForm7(){
 
 // modal
 var gomodal = document.querySelectorAll('.gomodal');
-var gomodaltradein = document.querySelectorAll('.gomodaltradein');
-var gomodalinsurance = document.querySelectorAll('.gomodalinsurance');
-var gomodalcredit = document.querySelectorAll('.gomodalcredit');
-var gomodalbuy = document.querySelectorAll('.gomodalbuy');
+var gomodal1 = document.querySelectorAll('.gomodal1');
+var gomodal2 = document.querySelectorAll('.gomodal2');
+var gomodal3 = document.querySelectorAll('.gomodal3');
+var gomodal4 = document.querySelectorAll('.gomodal4');
 
-var modalpopup  =  document.getElementsByClassName("modal__pop-up")[0];
-var modalform  =  document.getElementsByClassName("modal__form")[0];
-var modalformtradein  =  document.getElementsByClassName("modal__form-trade-in")[0];
-var modalforminsurance  =  document.getElementsByClassName("modal__form-insurance")[0];
-var modalformcredit  =  document.getElementsByClassName("modal__form-credit")[0];
-var modalformbuy  =  document.getElementsByClassName("modal__form-buy")[0];
+var modalform  =  document.getElementsByClassName("modal__pop-up")[0];
+var modalform1  =  document.getElementsByClassName("modal__form-trade-in")[0];
+var modalform2  =  document.getElementsByClassName("modal__form-insurance")[0];
+var modalform3  =  document.getElementsByClassName("modal__form-credit")[0];
+var modalform4  =  document.getElementsByClassName("modal__form-buy")[0];
 
-var modalclose  =  document.getElementsByClassName("modal__close-btn");
-
-
-modalclose.addEventListener("click", closeModalPopup, false);
+var closemodal  =  document.getElementsByClassName("modal__close-btn");
 
 
-for (var i = 0; i < gomodal.length; i++) {
-  gomodal[i].addEventListener("click", openModalPopup, false);
+closemodal.addEventListener("click", closeModalForm1, false);
+closemodal.addEventListener("click", closeModalForm2, false);
+closemodal.addEventListener("click", closeModalForm3, false);
+closemodal.addEventListener("click", closeModalForm4, false);
+
+
+
+for (var i = 0; i < gomodal1.length; i++) {
+  gomodal1[i].addEventListener("click", openModalForm1, false);
 }
-
-for (var i = 0; i < gomodaltradein.length; i++) {
-  gomodaltradein[i].addEventListener("click", openModalTradein, false);
+for (var i = 0; i < gomodal2.length; i++) {
+  gomodal2[i].addEventListener("click", openModalForm2, false);
 }
-
-for (var i = 0; i < gomodalinsurance.length; i++) {
-  gomodalinsurance[i].addEventListener("click", openModalInsurance, false);
+for (var i = 0; i < gomodal3.length; i++) {
+  gomodal3[i].addEventListener("click", openModalForm3, false);
 }
-
-for (var i = 0; i < gomodalcredit.length; i++) {
-  gomodalcredit[i].addEventListener("click", openModalCredit, false);
-}
-
-for (var i = 0; i < modalformbuy.length; i++) {
-  modalformbuy[i].addEventListener("click", openModalBuy, false);
+for (var i = 0; i < gomodal4.length; i++) {
+  gomodal4[i].addEventListener("click", openModalForm4, false);
 }
 
 
-
-function openModalTradein(){
-  modalpopup.classList.add("active1");
+function openModalForm1(){
+  modalform.classList.add("active1");
   setTimeout(function() { 
-    modalformtradein.classList.add("active");
+    modalform1.classList.add("active");
   }, 100);
 }
-
-function openModalInsurance(){
-  modalpopup.classList.add("active2");
+function openModalForm2(){
+  modalform.classList.add("active2");
   setTimeout(function() { 
-    modalforminsurance.classList.add("active");
+    modalform2.classList.add("active");
   }, 100);
 }
-
-function openModalCredit(){
-  modalpopup.classList.add("active3");
+function openModalForm3(){
+  modalform.classList.add("active3");
   setTimeout(function() { 
-    modalformcredit.classList.add("active");
+    modalform3.classList.add("active");
   }, 100);
 }
-
-function openModalBuy(){
-  modalpopup.classList.add("active4");
+function openModalForm4(){
+  modalform.classList.add("active4");
   setTimeout(function() { 
-    modalformbuy.classList.add("active");
+    modalform4.classList.add("active");
   }, 100);
 }
 
 
-function closeModalPopup(){
-  modalpopup.classList.remove("active1");
-  modalform.classList.remove("active");
+function closeModalForm1(){
+  modalform.classList.remove("active1");
+  modalform1.classList.remove("active");
+}
+function closeModalForm2(){
+  modalform.classList.remove("active2");
+  modalform2.classList.remove("active");
+}
+function closeModalForm3(){
+  modalform.classList.remove("active3");
+  modalform3.classList.remove("active");
+}
+function closeModalForm4(){
+  modalform.classList.remove("active4");
+  modalform4.classList.remove("active");
 }
 
-function closeModalTradein(){
-  modalpopup.classList.remove("active1");
-  modalformtradein.classList.remove("active");
-}
-
-function closeModalInsurance(){
-  modalpopup.classList.remove("active2");
-  modalforminsurance.classList.remove("active");
-}
-
-function closeModalCredit(){
-  modalpopup.classList.remove("active3");
-  modalformcredit.classList.remove("active");
-}
-
-function closeModalBuy(){
-  modalpopup.classList.remove("active4");
-  modalformbuy.classList.remove("active");
-}
 
 // -----Карта------------
 
