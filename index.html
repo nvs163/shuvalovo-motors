@@ -155,14 +155,15 @@
                             <li class="hero__item">Кредит под 4,9%</li>
                             <li class="hero__item">Выгода до 590 000</li>
                         </ul>
-                        <button class="hero__button btn1 call_but gopop3" type="button" aria-label="Записаться">
+                        <!-- <button class="hero__button btn1 call_but gopop3" type="button" aria-label="Записаться">
                             <span class="button__text ">Выбрать автомобиль</span> 
-                        </button>
+                        </button> -->
+                        <a class="hero__button btn1 call_but"  href="#catalog">Выбрать автомобиль</a>
                     </div>
                 </div>
             </section>
         
-            <section class="catalog sect-padding">
+            <section class="catalog sect-padding" id="catalog">
                 <div class="container">
                     <h2 class="catalog__title title-h2">Каталог автомобилей</h2>
 
@@ -401,10 +402,25 @@
                                 <input class="filters__input" type="text" name="marka" placeholder="Марка">
 
                                 <div class="filters__checkbox">
-                                    <input type="checkbox" value="audi" name="audi"> Audi
-                                    <input type="checkbox" value="audi" name="audi"> BMW
-                                    <input type="checkbox" value="audi" name="audi"> Ford
+                                    <div class="filters__checkbox-inner">
+                                        
+                                        <div class="filters__checkbox-custom">
+                                            <input type="checkbox" class="input__checkbox-custom" id="audi" value="audi" name="brand">
+                                            <label class="input__checkbox-label" for="audi">Audi</label>
+                                        </div>
+
+                                        <div class="filters__checkbox-custom">
+                                            <input type="checkbox" class="input__checkbox-custom" id="bmw" value="bmw" name="brand">
+                                            <label class="input__checkbox-label" for="bmw">BMW</label>
+                                        </div>
+
+                                        <div class="filters__checkbox-custom">
+                                            <input type="checkbox" class="input__checkbox-custom" id="ford" value="ford" name="brand">
+                                            <label class="input__checkbox-label" for="ford">Ford</label>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
 
                         </div>
@@ -415,9 +431,23 @@
                                 <input class="filters__input" type="text" name="marka" placeholder="Модель">
 
                                 <div class="filters__checkbox">
-                                    <input type="checkbox" value="audi" name="audi"> A4
-                                    <input type="checkbox" value="audi" name="audi"> M5
-                                    <input type="checkbox" value="audi" name="audi"> Focus
+                                    
+                                    <div class="filters__checkbox-inner">    
+                                        <div class="filters__checkbox-custom">
+                                            <input type="checkbox" class="input__checkbox-custom" id="A4" value="A4" name="marka">
+                                            <label class="input__checkbox-label" for="A4">A4</label>
+                                        </div>
+
+                                        <div class="filters__checkbox-custom">
+                                            <input type="checkbox" class="input__checkbox-custom" id="M5" value="M5" name="marka">
+                                            <label class="input__checkbox-label" for="M5">M5</label>
+                                        </div>
+
+                                        <div class="filters__checkbox-custom">
+                                            <input type="checkbox" class="input__checkbox-custom" id="Focus" value="Focus" name="marka">
+                                            <label class="input__checkbox-label" for="Focus">Focus</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -427,20 +457,50 @@
                             
                             <div class="filters__value">
                                 <div class="filters__value-half">
-                                    <input class="filters__input" type="text" name="marka" placeholder="Год от">
+                                    <input class="filters__input filters__input-from" type="text" name="year-from" placeholder="Год от">
 
                                     <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 2020
-                                        <input type="checkbox" value="audi" name="audi"> 2021
-                                        <input type="checkbox" value="audi" name="audi"> 2022
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2020" value="2020" name="year-from">
+                                                <label class="input__checkbox-label" for="2020">2020</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2021" value="2021" name="year-from">
+                                                <label class="input__checkbox-label" for="2021">2021</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2022" value="2022" name="year-from">
+                                                <label class="input__checkbox-label" for="2022">2022</label>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <input class="filters__input" type="text" name="marka" placeholder="до">
+                                    <div class="filters__input-line"></div>
+
+                                    <input class="filters__input filters__input-to" type="text" name="year-to" placeholder="до">
 
                                     <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 2020
-                                        <input type="checkbox" value="audi" name="audi"> 2021
-                                        <input type="checkbox" value="audi" name="audi"> 2022
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2020" value="2020" name="year-to">
+                                                <label class="input__checkbox-label" for="2020">2020</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2021" value="2021" name="year-to">
+                                                <label class="input__checkbox-label" for="2021">2021</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2022" value="2022" name="year-to">
+                                                <label class="input__checkbox-label" for="2022">2022</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 
@@ -452,87 +512,50 @@
                             
                             <div class="filters__value">
                                 <div class="filters__value-half">
-                                    <input class="filters__input" type="text" name="marka" placeholder="Пробег от">
+                                    <input class="filters__input filters__input-from" type="text" name="distance-from" placeholder="Пробег от">
 
                                     <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 10 000
-                                        <input type="checkbox" value="audi" name="audi"> 50 000
-                                        <input type="checkbox" value="audi" name="audi"> 100 000
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="25000" value="25000" name="distance-from">
+                                                <label class="input__checkbox-label" for="25000">25 000</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="50000" value="50000" name="distance-from">
+                                                <label class="input__checkbox-label" for="50000">50 000</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="100000" value="100000" name="distance-from">
+                                                <label class="input__checkbox-label" for="100000">100 000</label>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <input class="filters__input" type="text" name="marka" placeholder="до">
+                                    <div class="filters__input-line"></div>
+
+                                    <input class="filters__input filters__input-to" type="text" name="distance-to" placeholder="до">
 
                                     <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 10 000
-                                        <input type="checkbox" value="audi" name="audi"> 50 000
-                                        <input type="checkbox" value="audi" name="audi"> 100 000
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
 
-                        <div class="filters__brand">
-                            
-                            <div class="filters__value">
-                                <input class="filters__input" type="text" name="marka" placeholder="Марка">
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="25000" value="25000" name="distance-to">
+                                                <label class="input__checkbox-label" for="25000">25 000</label>
+                                            </div>
 
-                                <div class="filters__checkbox">
-                                    <input type="checkbox" value="audi" name="audi"> Audi
-                                    <input type="checkbox" value="audi" name="audi"> BMW
-                                    <input type="checkbox" value="audi" name="audi"> Ford
-                                </div>
-                            </div>
-                            
-                        </div>
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="50000" value="50000" name="distance-to">
+                                                <label class="input__checkbox-label" for="50000">50 000</label>
+                                            </div>
 
-                        <div class="filters__brand">
-                            
-                            <div class="filters__value">
-                                <input class="filters__input" type="text" name="marka" placeholder="Марка">
-
-                                <div class="filters__checkbox">
-                                    <input type="checkbox" value="audi" name="audi"> Audi
-                                    <input type="checkbox" value="audi" name="audi"> BMW
-                                    <input type="checkbox" value="audi" name="audi"> Ford
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="filters__brand">
-                            
-                            <div class="filters__value">
-                                <input class="filters__input" type="text" name="marka" placeholder="Марка">
-
-                                <div class="filters__checkbox">
-                                    <input type="checkbox" value="audi" name="audi"> Audi
-                                    <input type="checkbox" value="audi" name="audi"> BMW
-                                    <input type="checkbox" value="audi" name="audi"> Ford
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="filters__distance">
-                            
-                            <div class="filters__value">
-                                <div class="filters__value-half">
-                                    <input class="filters__input" type="text" name="marka" placeholder="Пробег от">
-
-                                    <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 10 000
-                                        <input type="checkbox" value="audi" name="audi"> 50 000
-                                        <input type="checkbox" value="audi" name="audi"> 100 000
-                                    </div>
-
-                                    <input class="filters__input" type="text" name="marka" placeholder="до">
-
-                                    <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 10 000
-                                        <input type="checkbox" value="audi" name="audi"> 50 000
-                                        <input type="checkbox" value="audi" name="audi"> 100 000
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="100000" value="100000" name="distance-to">
+                                                <label class="input__checkbox-label" for="100000">100 000</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 
@@ -540,38 +563,227 @@
                             
                         </div>
 
-                        <div class="filters__brand">
+                        <div class="filters__bodytype">
                             
                             <div class="filters__value">
-                                <input class="filters__input" type="text" name="marka" placeholder="Марка">
-
+                                <input class="filters__input" type="text" name="bodytype" placeholder="Кузов">
+                                
                                 <div class="filters__checkbox">
-                                    <input type="checkbox" value="audi" name="audi"> Audi
-                                    <input type="checkbox" value="audi" name="audi"> BMW
-                                    <input type="checkbox" value="audi" name="audi"> Ford
-                                </div>
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="25000" value="25000" name="distance-to">
+                                                <label class="input__checkbox-label" for="25000">Седан</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="50000" value="50000" name="distance-to">
+                                                <label class="input__checkbox-label" for="50000">Хетчбэк</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="100000" value="100000" name="distance-to">
+                                                <label class="input__checkbox-label" for="100000">Кроссовер</label>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
                             
                         </div>
 
-                        <div class="filters__distance">
+                        <div class="filters__transmission">
+                            
+                            <div class="filters__value">
+                                <input class="filters__input" type="text" name="transmission" placeholder="Коробка передач">
+
+                                <div class="filters__checkbox">
+                                    <input type="checkbox" value="audi" name="audi"> Механическая
+                                    <input type="checkbox" value="audi" name="audi"> Автоматическая
+                                    <input type="checkbox" value="audi" name="audi"> Вариатор
+                                </div>
+
+                                <div class="filters__checkbox">
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="mechakical" value="mechakical" name="transmission">
+                                                <label class="input__checkbox-label" for="mechakical">Механическая</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="automatical" value="automatical" name="transmission">
+                                                <label class="input__checkbox-label" for="automatical">Автоматическая</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="variator" value="variator" name="transmission">
+                                                <label class="input__checkbox-label" for="variator">Вариатор</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="filters__engine">
+                            
+                            <div class="filters__value">
+                                <input class="filters__input" type="text" name="engine" placeholder="Двигатель">
+
+                                <div class="filters__checkbox">
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="gas" value="gas" name="engine">
+                                                <label class="input__checkbox-label" for="gas">Бензин</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="disel" value="disel" name="engine">
+                                                <label class="input__checkbox-label" for="disel">Дизель</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="gibrid" value="gibrid" name="engine">
+                                                <label class="input__checkbox-label" for="gibrid">Гибрид</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="filters__volume">
                             
                             <div class="filters__value">
                                 <div class="filters__value-half">
-                                    <input class="filters__input" type="text" name="marka" placeholder="Пробег от">
+                                    <input class="filters__input filters__input-from" type="text" name="volume-from" placeholder="Объем от">
 
                                     <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 10 000
-                                        <input type="checkbox" value="audi" name="audi"> 50 000
-                                        <input type="checkbox" value="audi" name="audi"> 100 000
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="1.4" value="1.4" name="volume-from">
+                                                <label class="input__checkbox-label" for="1.4">1.4</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="1.6" value="1.6" name="volume-from">
+                                                <label class="input__checkbox-label" for="1.6">1.6</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2.0" value="2.0" name="volume-from">
+                                                <label class="input__checkbox-label" for="2.0">2.0</label>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <input class="filters__input" type="text" name="marka" placeholder="до">
+                                    <div class="filters__input-line"></div>
+
+                                    <input class="filters__input filters__input-to" type="text" name="volume-to" placeholder="до">
+                                    
+                                    <div class="filters__checkbox">
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2.0" value="2.0" name="volume-to">
+                                                <label class="input__checkbox-label" for="2.0">2.0</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="2.5" value="2.5" name="volume-to">
+                                                <label class="input__checkbox-label" for="2.5">2.5</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="3.0" value="3.0" name="volume-to">
+                                                <label class="input__checkbox-label" for="3.0">3.0</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="filters__drive">
+                            
+                            <div class="filters__value">
+                                <input class="filters__input" type="text" name="drive" placeholder="Привод">
+                                
+                                <div class="filters__checkbox">
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="front" value="front" name="drive">
+                                                <label class="input__checkbox-label" for="front">Передний</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="back" value="back" name="drive">
+                                                <label class="input__checkbox-label" for="back">Задний</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="4x4" value="4x4" name="drive">
+                                                <label class="input__checkbox-label" for="4x4">Полный</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="filters__price">
+                            
+                            <div class="filters__value">
+                                <div class="filters__value-half">
+                                    <input class="filters__input filters__input-from" type="text" name="price-from" placeholder="Цена от">
+                                    
+                                    <div class="filters__checkbox">
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="1000000" value="1000000" name="price-from">
+                                                <label class="input__checkbox-label" for="1000000">1 000 000</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="5000000" value="5000000" name="price-from">
+                                                <label class="input__checkbox-label" for="5000000">5 000 000</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="10000000" value="10000000" name="price-from">
+                                                <label class="input__checkbox-label" for="10000000">10 000 000</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filters__input-line"></div>
+
+                                    <input class="filters__input filters__input-to" type="text" name="price-to" placeholder="до">
 
                                     <div class="filters__checkbox">
-                                        <input type="checkbox" value="audi" name="audi"> 10 000
-                                        <input type="checkbox" value="audi" name="audi"> 50 000
-                                        <input type="checkbox" value="audi" name="audi"> 100 000
+
+                                        <div class="filters__checkbox-inner">    
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="1000000" value="1000000" name="price-to">
+                                                <label class="input__checkbox-label" for="1000000">1 000 000</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="5000000" value="5000000" name="price-to">
+                                                <label class="input__checkbox-label" for="5000000">5 000 000</label>
+                                            </div>
+
+                                            <div class="filters__checkbox-custom">
+                                                <input type="checkbox" class="input__checkbox-custom" id="10000000" value="10000000" name="price-to">
+                                                <label class="input__checkbox-label" for="10000000">10 000 000</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 
