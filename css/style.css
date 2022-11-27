@@ -33,6 +33,12 @@ h1 {
 	margin: 0.67em 0;
 }
 
+/* focus */
+
+*:focus {
+	outline: none;
+}
+
 /* Grouping content
 	 ========================================================================== */
 
@@ -1304,7 +1310,7 @@ body {
 }
 
 .filters__checkbox {
-	/* display: none; */
+	display: none;
 	padding: 20px;
 	position: absolute;
 	top: 50px;
@@ -1318,10 +1324,11 @@ body {
 	white-space: nowrap;
 }
 
-.filters__checkbox-inner {
-	/* display: grid;
-	grid-template-columns: repeat(4,minmax(0,1fr)); */
+.filters__checkbox.active {
+	display: block;
+}
 
+.filters__checkbox-inner {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -3132,9 +3139,7 @@ ul.breadcrumb li+li:before {
     max-width: 100%;
     position: relative;
 }
-/* .question-form-inner1 {
-	max-width: 510px;
-} */
+
 .question-form-inner1 {
 	max-width: 0px;
 	left: 510px;
@@ -3244,9 +3249,6 @@ ul.breadcrumb li+li:before {
 .question-form-inner2 .inp-p {
 	max-width: 410px;
 }
-/* .inp-dark {
-	color: #05141F;
-} */
 .inp-dark::-webkit-input-placeholder {
 	color: #05141F;
 }
@@ -3272,6 +3274,29 @@ input::-webkit-input-placeholder {
 
 /* modal (pop-up) - modal__form */
 
+.modal__overlay {
+	display: none;
+}
+
+.modal__overlay.active {
+	z-index: 1000;
+  display: flex;
+  flex: 0 1 auto;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  will-change: transform;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #585858e3;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+}
+
 .modal__form {
 	display: none;
 	position: absolute;
@@ -3285,31 +3310,12 @@ input::-webkit-input-placeholder {
 	color: #05141F;
 }
 
-.modal__form-credit, .modal__form-trade-in, .modal__form-insurance, .modal__form-buy {
+/* .modal__form-credit, .modal__form-trade-in, .modal__form-insurance, .modal__form-buy {
 	display: none;
-}
+} */
 
-.modal__form.active, .modal__form-credit.active, .modal__form-trade-in.active, .modal__form-insurance.active, .modal__form-buy.active {
+.modal__form-credit.active, .modal__form-trade-in.active, .modal__form-insurance.active, .modal__form-buy.active {
 	display: block;
-}
-
-.modal__overlay.active {
-	z-index: 1000;
-  display: flex;
-  flex: 0 1 auto;
-  height: 100%;
-  top: 0;
-  position: fixed;
-  will-change: transform;
-  width: 100%;
-  left: 0;
-  right: 0;
-  background: #585858e3;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-out;
 }
 
 .modal__container {
@@ -3332,6 +3338,7 @@ input::-webkit-input-placeholder {
 .modal__close {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin-left: 13px;
 }
 
 .modal__close-btn {
@@ -3340,7 +3347,7 @@ input::-webkit-input-placeholder {
 }
 
 .modal__close-img {
-	padding-right: 10px;
+	padding-right: 13px;
 }
 
 .modal__close-text {
@@ -3397,7 +3404,7 @@ input::-webkit-input-placeholder {
 }
 
 .modal__hero-trade-in {
-	background-image: url(../assets/img/bg-modal-trade-in.jpg);
+	background-image: url(../assets/img/bg-modal-exchange.jpg);
 }
 
 .modal__hero-insurance {

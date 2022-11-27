@@ -309,81 +309,35 @@ function closeQuestionForm7(){
 // modal
 var gomodal = document.querySelectorAll('.gomodal');
 var gomodal1 = document.querySelectorAll('.gomodal1');
-var gomodal2 = document.querySelectorAll('.gomodal2');
-var gomodal3 = document.querySelectorAll('.gomodal3');
-var gomodal4 = document.querySelectorAll('.gomodal4');
 
-var modalform  =  document.getElementsByClassName("modal__pop-up")[0];
+var modaloverlay  =  document.getElementsByClassName("modal__overlay")[0];
+
 var modalform1  =  document.getElementsByClassName("modal__form-trade-in")[0];
-var modalform2  =  document.getElementsByClassName("modal__form-insurance")[0];
-var modalform3  =  document.getElementsByClassName("modal__form-credit")[0];
-var modalform4  =  document.getElementsByClassName("modal__form-buy")[0];
+
 
 var closemodal  =  document.getElementsByClassName("modal__close-btn");
 
 
 closemodal.addEventListener("click", closeModalForm1, false);
-closemodal.addEventListener("click", closeModalForm2, false);
-closemodal.addEventListener("click", closeModalForm3, false);
-closemodal.addEventListener("click", closeModalForm4, false);
 
 
 
 for (var i = 0; i < gomodal1.length; i++) {
   gomodal1[i].addEventListener("click", openModalForm1, false);
 }
-for (var i = 0; i < gomodal2.length; i++) {
-  gomodal2[i].addEventListener("click", openModalForm2, false);
-}
-for (var i = 0; i < gomodal3.length; i++) {
-  gomodal3[i].addEventListener("click", openModalForm3, false);
-}
-for (var i = 0; i < gomodal4.length; i++) {
-  gomodal4[i].addEventListener("click", openModalForm4, false);
-}
 
 
 function openModalForm1(){
-  modalform.classList.add("active1");
+  modaloverlay.classList.add("active");
   setTimeout(function() { 
     modalform1.classList.add("active");
-  }, 100);
-}
-function openModalForm2(){
-  modalform.classList.add("active2");
-  setTimeout(function() { 
-    modalform2.classList.add("active");
-  }, 100);
-}
-function openModalForm3(){
-  modalform.classList.add("active3");
-  setTimeout(function() { 
-    modalform3.classList.add("active");
-  }, 100);
-}
-function openModalForm4(){
-  modalform.classList.add("active4");
-  setTimeout(function() { 
-    modalform4.classList.add("active");
   }, 100);
 }
 
 
 function closeModalForm1(){
-  modalform.classList.remove("active1");
+  modaloverlay.classList.remove("active");
   modalform1.classList.remove("active");
-}
-function closeModalForm2(){
-  modalform.classList.remove("active2");
-  modalform2.classList.remove("active");
-}
-function closeModalForm3(){
-  modalform.classList.remove("active3");
-  modalform3.classList.remove("active");
-}
-function closeModalForm4(){
-  modalform.classList.remove("active4");
-  modalform4.classList.remove("active");
 }
 
 
