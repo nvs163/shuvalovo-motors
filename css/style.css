@@ -4488,7 +4488,25 @@ input::-webkit-input-placeholder {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 570px) {
+	.card__params {
+		display: block;
+		margin-bottom: 30px;
+		max-height: 100%;
+	}
+
+	.card__item {
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.card__addInfo {
+		display: block;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 376px) {
 	.card {
 		padding-bottom: 40px;
 	}
@@ -4526,24 +4544,6 @@ input::-webkit-input-placeholder {
 		flex-direction: row;
     font-size: 15px;
     line-height: 167%;
-	}
-
-	.card__addInfo {
-		display: block;
-		margin-bottom: 30px;
-	}
-
-	.card__params {
-		display: block;
-		margin-bottom: 30px;
-		/* flex-wrap: nowrap;
-		flex-direction: column; */
-		max-height: 100%;
-	}
-
-	.card__item {
-		flex-direction: row;
-		width: 100%;
 	}
 
 	.card__params-text {
