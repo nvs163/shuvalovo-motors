@@ -1561,6 +1561,9 @@ input {
 	flex-direction: column;
 	align-items: center;
 }
+.cars__pagination-page--mobile {
+		display: none;
+	}
 .cars__pagination-btn {
 	margin-bottom: 30px;
 	padding: 20px 40px;
@@ -1781,8 +1784,6 @@ input {
 .reviews__title {
 	margin-bottom: 40px;
 }
-.reviews__item {
-}
 .reviews__img {
 	margin-bottom: 30px;
 }
@@ -1930,7 +1931,7 @@ input {
   }
 }
 
-/*------card----------*/
+/*------servcentr----------*/
 
 .servcentr__wrapper {
 	align-items: flex-start;
@@ -3633,7 +3634,7 @@ input::-webkit-input-placeholder {
 		display: inherit;
 	}
 	.info__title {
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 	.stock__title {
 		margin-bottom: 20px;
@@ -3662,7 +3663,7 @@ input::-webkit-input-placeholder {
 		max-width: 100%;
 	}
 	.servcentr {
-		padding-top: 0;
+		padding-top: 40px;
 	}
 	.servcentr__wrapper {
 		display: inherit;
@@ -3741,8 +3742,16 @@ input::-webkit-input-placeholder {
 	.container {
 		padding: 0 30px;
 	}
+	.hero__list {
+    margin-bottom: 165px;
+	}
 	.cars__list {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		gap: 35px;
+		margin-bottom: 35px;
+	}
+	.cars__button {
+    padding: 20px 30px;
 	}
 	.question-form-inner1 .dropdown {
 		margin-right: 0;
@@ -3753,6 +3762,26 @@ input::-webkit-input-placeholder {
 
 	.footer-menu__item {
 		flex: 0 1 33.333%;
+	}
+
+	.catalog__list {
+		column-count: 3;
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+	}
+
+	.filters__inner {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 35px;
+		row-gap: 20px;
+	}
+
+	.filters__btn {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.info__text {
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 576px) {
@@ -3785,17 +3814,50 @@ input::-webkit-input-placeholder {
 	.hero__text {
 		margin-bottom: 31px;
 	}
+	.hero__list {
+    margin-bottom: 30px;
+	}
 	.hero__button {
 		max-width: 100%;
+		padding: 20px 64px;
 		background: #fff;
 		color: #05141F;
 	}
 	.btn1:hover .button__text:after {
 		background-color: #05141F;
 	}
+
+	.catalog__list {
+		column-count: 2;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+	}
+
+	.filters__inner {
+		grid-template-columns: repeat(1, 1fr);
+		column-gap: 0px;
+		row-gap: 15px;
+	}
+
+	.filters__btn-reset {
+		margin: 0 auto;
+	}
+
+	.cars__list {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cars__pagination-page--desktop {
+		display: none;
+	}
+	.cars__pagination-page--mobile {
+		display: flex;
+	}
+
 	.info__button {
 		max-width: 100%;
 	}
+	
 	.stock__button {
 		max-width: 100%;
 		padding: 20px;
@@ -3941,6 +4003,11 @@ input::-webkit-input-placeholder {
 	}
 }
 
+@media screen and (max-width: 375px) {
+	
+}
+
+
 /* //////////////////////
 Остальное
 ///////////////////// */
@@ -3969,9 +4036,7 @@ input::-webkit-input-placeholder {
 		width: 100%;
 	}
 }
-@media screen and (max-width: 375px) {
-	
-}
+
 
 /* ////request////////// */
 
@@ -4392,14 +4457,18 @@ input::-webkit-input-placeholder {
 	}
 
 	.card__params {
-		/* column-count: 2; */
+		display: flex;
 		margin-bottom: 20px;
+		flex-wrap: wrap;
+		flex-direction: column;
+		max-height: 300px;
 	}
 
 	.card__item {
-		/* flex-direction: column; */
+		flex-direction: column;
     font-size: 18px;
     line-height: 139%;
+		width: 50%;
 	}
 	
 	.card__addInfo {
@@ -4465,7 +4534,16 @@ input::-webkit-input-placeholder {
 	}
 
 	.card__params {
+		display: block;
 		margin-bottom: 30px;
+		/* flex-wrap: nowrap;
+		flex-direction: column; */
+		max-height: 100%;
+	}
+
+	.card__item {
+		flex-direction: row;
+		width: 100%;
 	}
 
 	.card__params-text {
