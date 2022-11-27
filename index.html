@@ -1201,7 +1201,7 @@
                             <p class="count__text">
                                 Мы предлагаем эксклюзивные условия по страхованию автомобиля. Сотрудничаем с ведущими страховыми компаниями на рынке, чтобы обеспечить самую надёжную защиту автомобиля.
                             </p>
-                            <button class="count__button btn1" type="button" aria-label="Связаться">
+                            <button class="count__button btn1 gomodalinsurance" type="button" aria-label="Связаться">
                                 <span class="button__text">Подробнее</span>
                             </button>
                         </li>
@@ -1213,7 +1213,7 @@
                             <p class="count__text">
                                 Предоставляет своим клиентам возможность приобретения автомобилей по системе Trade-in. Мы принимаем в зачёт практически любые автомобили.
                             </p>
-                            <button class="count__button btn1" type="button" aria-label="Связаться">
+                            <button class="count__button btn1 gomodaltradein" type="button" aria-label="Связаться">
                                 <span class="button__text">Подробнее</span>
                             </button>
                         </li>
@@ -1225,7 +1225,7 @@
                             <p class="count__text">
                                 Предлагаются разные кредитные программы на приобретение автомобилей, в рамках которых возможно получить автомобиль по сниженной ставке от 8,9% годовых, не посещая отделения банка.
                             </p>
-                            <button class="count__button btn1" type="button" aria-label="Связаться">
+                            <button class="count__button btn1 gomodalcredit" type="button" aria-label="Связаться">
                                 <span class="button__text">Подробнее</span>
                             </button>
                         </li>
@@ -1241,7 +1241,7 @@
                             <h3 class="info__title">Выкуп авто в день обращения</h3>
                             <p class="info__text">Мы предлагаем выкуп автомобилей с пробегом, при котором всю сумму вы получаете сразу после заключения сделки по автовыкупу.</p>
                         </div>
-                        <button class="info__button btn1 gopop3" type="button" aria-label="Связаться">
+                        <button class="info__button btn1 gomodalbuy" type="button" aria-label="Связаться">
                             <span class="button__text">Подробнее</span> 
                         </button>
                     </div>
@@ -1874,10 +1874,10 @@
         <div class="modal__pop-up">
 
             <!-- modal__trade-in -->
-            <div class="modal__overlay">
-                <div class="modal__form modal__form-trade-in" id="modal__form-trade-in">
+            <div class="modal__overlay modal-overlay">
+                <div class="modal__form modal__form-trade-in modal-form-trade-in" id="modal__form-trade-in">
                     <div class="modal__close">
-                        <button class="modal__close-btn">
+                        <button class="modal__close-btn" id="closemodal1">
                             <img src="./assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
                             <span class="modal__close-text">Закрыть</span>
                         </button>
@@ -2019,7 +2019,7 @@
             <div class="modal__overlay">
                 <div class="modal__form modal__form-insurance" id="modal__insurance">
                     <div class="modal__close">
-                        <button class="modal__close-btn">
+                        <button class="modal__close-btn" id="closemodal2">
                             <img src="./assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
                             <span class="modal__close-text">Закрыть</span>
                         </button>
@@ -2133,7 +2133,7 @@
             <div class="modal__overlay">
                 <div class="modal__form modal__form-credit" id="modal__credit">
                     <div class="modal__close">
-                        <button class="modal__close-btn">
+                        <button class="modal__close-btn" id="closemodal3">
                             <img src="./assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
                             <span class="modal__close-text">Закрыть</span>
                         </button>
@@ -2285,7 +2285,7 @@
             <div class="modal__overlay">
                 <div class="modal__form modal__form-buy" id="modal__buy">
                     <div class="modal__close">
-                        <button class="modal__close-btn">
+                        <button class="modal__close-btn" id="closemodal4">
                             <img src="./assets/icon/close-icon.svg" alt="close icon" class="modal__close-img">
                             <span class="modal__close-text">Закрыть</span>
                         </button>
