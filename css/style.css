@@ -1478,8 +1478,24 @@ body {
 	margin-bottom: 40px;
 }
 
+.cars__item {
+	position: relative;
+}
+
+.cars__foto {
+	position: relative;
+	height: 260px;
+}
+
 .cars__slider {
 	margin-bottom: 20px;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+	
 }
 
 .cars__slider-page {
@@ -1488,6 +1504,15 @@ body {
   flex: 1;
   height: 100%;
   position: static;
+}
+
+.cars__slider-page .cars__slider-inner {
+    opacity: 0;
+}
+
+.cars__slider:not(:hover) .cars__slider-page:first-child .cars__slider-inner, .cars__slider-page:hover .cars__slider-inner {
+    opacity: 1;
+    z-index: -1;
 }
 
 .cars__slider-button {
@@ -1500,6 +1525,11 @@ body {
   z-index: 4;
 	position: absolute;
 }
+
+.cars__slider:not(:hover) .cars__slider-button {
+    opacity: 0;
+}
+
 .cars__slider-button::after {
   content: "";
   position: absolute;
@@ -1508,9 +1538,15 @@ body {
   left: 1px;
   right: 1px;
   top: 1px;
-	background-color: #fffc;
+	background-color: #CDD0D2;
   transition: background-color .2s;
 }
+
+.cars__slider:not(:hover) .cars__slider-page:first-child .cars__slider-button_visible:after, .cars__slider-page:hover .cars__slider-button:after {
+    background-color: #05141F;
+		height: 5px;
+}
+
 .cars__img {
 	position: relative;
 	cursor: pointer;
@@ -1518,6 +1554,7 @@ body {
 
 .cars__item-link {
 	color: inherit;
+	display: block;
 }
 
 .cars__item-name {

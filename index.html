@@ -823,29 +823,30 @@
                         </li>
                     </ul>
 
-                    <div class="cars__list">
+                    <ul class="cars__list">
                         
-                        <div class="cars__item">
-
-                            <div class="cars__slider">
-                                <div class="cars__slider-page">
-                                    <div class="cars__slider-inner">
-                                        <a href="./pages/card.html" class="cars__slider-link">
-                                            <img class="cars__img" src="./assets/img/car.png" alt="car">
-                                        </a>
+                        <li class="cars__item">
+                            
+                            <div class="cars__foto">
+                                <div class="cars__slider">
+                                    <div class="cars__slider-page">
+                                        <div class="cars__slider-inner">
+                                            <a href="./pages/card.html" class="cars__slider-link">
+                                                <img class="cars__img" src="./assets/img/slider-1.png" alt="car">
+                                            </a>
+                                        </div>
+                                        <div class="cars__slider-button"></div>
                                     </div>
-                                    <div class="cars__slider-button"></div>
+                                    
                                 </div>
-                                
                             </div>
                             
-                            <a href="./pages/card.html" class="cars__item-link">
-                                <h3 class="cars__item-name title-h3">
+                            <h3 class="cars__item-name title-h3">
+                                <a href="./pages/card.html" class="cars__item-link">
                                     <span class="cars__name">Kia K5</span> <span>—</span>
                                     <span class="cars__year">2020</span>
-                                </h3>
-                            </a>
-                            
+                                </a>
+                            </h3>
                             <div class="cars__row">
                                 <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
                                 <p class="distans">122 000 км,</p>
@@ -870,12 +871,14 @@
                                 <p class="cars__cost">1 990 000</p>
                                 <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
                             </div>
+                            
+                            
                             <button class="cars__button btn2 gopop2" type="button" aria-label="Записаться">
                                 <span class="button__text">Оставить заявку</span>
                             </button>
-                        </div>
+                        </li>
                         
-                    </div>
+                    </ul>
 
                     <div class="cars__pagination">
                         <div class="cars__pagination-more">
@@ -2464,6 +2467,9 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- js -->
     <script src="js/script.js"></script>
+
+    <!-- Модальные окна -->
+    <script src="./js/modal.js"></script>
 
     <script>document.getElementById('davaToday').valueAsDate = new Date();</script>
 </body>
