@@ -1619,116 +1619,255 @@
         </footer>
 
         <div class="question-form">
-            <div class="question-form-inner1 form-in">
-                <form id="form1" action="#">
-                    <div class="form__top">
-                        <div class="form__title">
-                            Записаться на сервис
+                <div class="question-form-inner1 form-in">
+                    <form id="form1" action="#">
+                        <div class="form__top">
+                            <div class="form__title">
+                                Записаться на сервис
+                            </div>
+                            <div class="form__name title-h3">
+                                Данные автомобиля
+                            </div>
+                            <div class="dropdown-all">
+                                <div class="dropdown dropbtn-none">
+                                    <button class="dropbtn">VIN-номер (необязательно)</button>
+                                    
+                                </div>
+                                <div class="dropdown">
+                                    <button data-path="five" class="dropbtn btn btn-secondary dropdown-toggle">
+                                        Модельный ряд
+                                    </button>
+                                    <ul data-target="five" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="/#">Модельный ряд</a></li>
+                                    <li><a class="dropdown-item" href="/#">Модельный ряд</a></li>
+                                    <li><a class="dropdown-item" href="/#">Модельный ряд</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button data-path="six" class="dropbtn btn btn-secondary dropdown-toggle">
+                                        Пробег автомобиля
+                                    </button>
+                                    <ul data-target="six" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="/#">Пробег автомобиля</a></li>
+                                    <li><a class="dropdown-item" href="/#">Пробег автомобиля</a></li>
+                                    <li><a class="dropdown-item" href="/#">Пробег автомобиля</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button data-path="seven" class="dropbtn btn btn-secondary dropdown-toggle">
+                                        Номер ТО
+                                    </button>
+                                    <ul data-target="seven" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="/#">Номер ТО</a></li>
+                                    <li><a class="dropdown-item" href="/#">Номер ТО</a></li>
+                                    <li><a class="dropdown-item" href="/#">Номер ТО</a></li>
+                                    </ul>
+                                </div>
+                                <input class="dropbtn" type="date" name="Date" id="davaToday">
+                            </div>
                         </div>
-                        <div class="form__name title-h3">
-                            Данные автомобиля
-                        </div>
-                        <div class="dropdown-all">
-                            <div class="dropdown dropbtn-none">
-                                <button class="dropbtn">VIN-номер (необязательно)</button>
-                                
-                            </div>
-                            <div class="dropdown">
-                                <button data-path="five" class="dropbtn btn btn-secondary dropdown-toggle">
-                                    Модельный ряд
-                                </button>
-                                <ul data-target="five" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Модельный ряд</a></li>
-                                  <li><a class="dropdown-item" href="#">Модельный ряд</a></li>
-                                  <li><a class="dropdown-item" href="#">Модельный ряд</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button data-path="six" class="dropbtn btn btn-secondary dropdown-toggle">
-                                    Пробег автомобиля
-                                </button>
-                                <ul data-target="six" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Пробег автомобиля</a></li>
-                                  <li><a class="dropdown-item" href="#">Пробег автомобиля</a></li>
-                                  <li><a class="dropdown-item" href="#">Пробег автомобиля</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button data-path="seven" class="dropbtn btn btn-secondary dropdown-toggle">
-                                    Номер ТО
-                                </button>
-                                <ul data-target="seven" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Номер ТО</a></li>
-                                  <li><a class="dropdown-item" href="#">Номер ТО</a></li>
-                                  <li><a class="dropdown-item" href="#">Номер ТО</a></li>
-                                </ul>
-                            </div>
-                            <input class="dropbtn" type="date" name="Date" id="davaToday">
-                        </div>
-                    </div>
-                    <div class="form__bottom">
-                        <h3 class="form__name title-h3">
-                            Контактная информация
-                        </h3>
-                        <input type="text" class="inp-p" placeholder="Ваше имя">
-                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
-                        <input type="text" class="inp-p inp" placeholder="Какую проблему необходимо решить?">
-                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="">обработку персональных данных</a></div>                        <button class="form__button btn1" type="button" aria-label="Записаться">
-                            <span class="button__text ">Записаться</span> 
-                        </button>
-                        <div id="closeform" class="close">+</div>
-                    </div> 
-                </form>
-            </div>
-            <div class="question-form-inner2 form-in">
-                <form id="form2" action="#">
-                    <div class="form__img">
-                        <img src="assets/img/form2.png" alt="">
-                    </div>
-                    <div class="form__bottom">
-                        <h3 class="form__name title-h3">
-                            Записаться на ремонт
-                        </h3>
-                        <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
-                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
-                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="">обработку персональных данных</a></div>
-                        <button class="form__button btn1" type="button" aria-label="Отправить запрос">
-                            <span class="button__text ">Отправить запрос</span> 
-                        </button>
-                        <div id="closeform2" class="close">+</div>
-                    </div> 
-                </form>
-            </div>
-            <div class="question-form-inner3 form-in">
-                <form id="form3" action="#">
-                    <div class="form__img">
-                        <img src="assets/img/form3.png" alt="">
-                    </div>
-                    <div class="form__bottom">
-                        <h3 class="form__name title-h3">
-                            Записаться
-                        </h3>
-                        <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
-                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
-                        <div class="dropdown">
-                            <button data-path="one" class="dropbtn btn btn-secondary dropdown-toggle">
-                                Марка автомобиля
+                        <div class="form__bottom">
+                            <h3 class="form__name title-h3">
+                                Контактная информация
+                            </h3>
+                            <input type="text" class="inp-p" placeholder="Ваше имя">
+                            <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                            <input type="text" class="inp-p inp" placeholder="Какую проблему необходимо решить?">
+                            <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>                        <button class="form__button btn1" type="button" aria-label="Записаться">
+                                <span class="button__text ">Записаться</span> 
                             </button>
-                            <ul data-target="one" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <li><a class="dropdown-item" href="#">Марка автомобиля</a></li>
-                              <li><a class="dropdown-item" href="#">Марка автомобиля</a></li>
-                              <li><a class="dropdown-item" href="#">Марка автомобиля</a></li>
-                            </ul>
+                            <div id="closeform" class="close">+</div>
+                        </div> 
+                    </form>
+                </div>
+
+                <div class="question-form-inner2 form-in">
+                    <form id="form2" action="#">
+                        <div class="form__img">
+                            <img src="./assets/img/form3.png" alt="">
                         </div>
-                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="">обработку персональных данных</a></div>
-                        <button class="form__button btn1" type="button" aria-label="Отправить запрос">
-                            <span class="button__text ">Отправить запрос</span> 
-                        </button>
-                        <div id="closeform3" class="close">+</div>
-                    </div> 
-                </form>
+                        <div class="form__bottom">
+                            <h3 class="form__name title-h3">
+                                Оставить заявку на просмотр
+                            </h3>
+                            <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                            <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                            <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                            <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                                <span class="button__text ">Отправить запрос</span> 
+                            </button>
+                            <div id="closeform2" class="close">+</div>
+                        </div> 
+                    </form>
+                </div>
+
+                <div class="question-form-inner3 form-in ">
+                    <form id="form3" action="#">
+                        <div class="form__img">
+                            <img src="./assets/img/form3.png" alt="">
+                        </div>
+                        <div class="form__bottom">
+                            <h3 class="form__name title-h3">
+                                Оставить заявку на просмотр
+                            </h3>
+                            <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                            <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                            <div class="dropdown">
+                                <button data-path="one" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Марка автомобиля
+                                </button>
+                                <ul data-target="one" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                            <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                                <span class="button__text ">Отправить запрос</span> 
+                            </button>
+                            <div id="closeform3" class="close">+</div>
+                        </div> 
+                    </form>
+                </div>
+
+                <div class="question-form-inner4 form-in question-form__trade-in">
+                    <form id="form4" action="#">
+                        <div class="form__img">
+                            <img src="./assets/img/pop-up-trade-in.jpg" alt="trade-in">
+                        </div>
+                        <div class="form__bottom">
+                            <h3 class="form__name title-h3">
+                                Оставить заявку на Трейд-ин
+                            </h3>
+                            <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                            <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                            <div class="dropdown">
+                                <button data-path="one" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Марка автомобиля
+                                </button>
+                                <ul data-target="one" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                            <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                                <span class="button__text ">Отправить запрос</span> 
+                            </button>
+                            <div id="closeform4" class="close">+</div>
+                        </div> 
+                    </form>
+                </div>
+
+                <div class="question-form-inner5 form-in question-form__ins">
+                    <form id="form5" action="#">
+                        <div class="form__img">
+                            <img src="./assets/img/pop-up-ins.jpg" alt="trade-in">
+                        </div>
+                        <div class="form__bottom">
+                            <h3 class="form__name title-h3">
+                                Оставить заявку на страхование
+                            </h3>
+                            <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                            <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                            <div class="dropdown">
+                                <button data-path="one" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Марка автомобиля
+                                </button>
+                                <ul data-target="one" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                            <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                                <span class="button__text ">Отправить запрос</span> 
+                            </button>
+                            <div id="closeform5" class="close">+</div>
+                        </div> 
+                    </form>
+                </div>
+
+                <div class="question-form-inner6 form-in question-form__credit">
+                    <form id="form6" action="#">
+                        <div class="form__img">
+                            <img src="./assets/img/pop-up-credit.jpg" alt="trade-in">
+                        </div>
+                        <div class="form__bottom">
+                            <h3 class="form__name title-h3">
+                                Рассчитать кредит
+                            </h3>
+                            <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                            <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                            
+                            <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                            <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                                <span class="button__text ">Отправить запрос</span> 
+                            </button>
+                            <div id="closeform6" class="close">+</div>
+                        </div> 
+                    </form>
+                </div>
+
+                <div class="question-form-inner7 form-in question-form__buy">
+                    <form id="form7" action="#">
+                        <div class="form__img">
+                            <img src="./assets/img/pop-up-buy.jpg" alt="buy">
+                        </div>
+                        <div class="form__bottom">
+                            <h3 class="form__name title-h3">
+                                Оставить заявку на выкуп авто
+                            </h3>
+                            <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                            <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+
+                            <div class="dropdown">
+                                <button data-path="one" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Марка автомобиля
+                                </button>
+                                <ul data-target="one" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/#">Марка автомобиля</a>
+                                </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных данных</a></div>
+                            <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                                <span class="button__text ">Отправить запрос</span> 
+                            </button>
+                            <div id="closeform7" class="close">+</div>
+                        </div> 
+                    </form>
+                </div>
             </div>
-        </div>
 
 
 

@@ -2596,13 +2596,27 @@ ul.breadcrumb li+li:before {
 	display: flex;
 	column-gap: 30px;
 }
-.error-page__button {
-	width: 290px;
-	height: 60px;
+.error-page__button, .thankyou-page__link {
+	padding: 20px 76px;
 	color: #fff;
 	font-size: 15px;
 	line-height: 20px;
+	text-align: center;
 }
+
+.thankyou-page__link {
+	padding: 22px;
+}
+
+.error-page__link, .thankyou-page__link {
+	background-color: #05141F;
+}
+
+.error-page__link:hover .button__text:after, .thankyou-page__link:hover .button__text:after {
+	width: 100%;
+	background-color: #fff;
+}
+
 .error-page__line {
 	border: 1px solid #fff;
 }
