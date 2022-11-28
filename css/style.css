@@ -3351,11 +3351,12 @@ input::-webkit-input-placeholder {
   flex: 0 1 auto;
   height: 100%;
   top: 0;
-  position: absolute;
+  position: fixed;
   will-change: transform;
   width: 100%;
   left: 0;
   right: 0;
+	bottom: 0;
   background: #585858e3;
   padding: 0;
   margin: 0;
@@ -3375,11 +3376,9 @@ input::-webkit-input-placeholder {
 	font-size: 15px;
 	line-height: 167%;
 	color: #05141F;
+	max-height:100%;
+	overflow-y:scroll;
 }
-
-/* .modal__form-credit, .modal__form-trade-in, .modal__form-insurance, .modal__form-buy {
-	display: none;
-} */
 
 .modal__form-credit.active, .modal__form-trade-in.active, .modal__form-insurance.active, .modal__form-buy.active {
 	display: block;
