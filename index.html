@@ -399,7 +399,9 @@
                         <div class="filters__brand">
                             
                             <div class="filters__value">
-                                <input class="filters__input" type="text" name="marka" placeholder="Марка">
+                                <div class="filters__input-inner">
+                                    <input class="filters__input" type="text" name="marka" placeholder="Марка">
+                                </div>
 
                                 <div class="filters__checkbox">
                                     <div class="filters__checkbox-inner">
@@ -428,7 +430,9 @@
                         <div class="filters__model">
                             
                             <div class="filters__value">
-                                <input class="filters__input" type="text" name="model" placeholder="Модель">
+                                <div class="filters__input-inner">
+                                    <input class="filters__input" type="text" name="model" placeholder="Модель">
+                                </div>
 
                                 <div class="filters__checkbox">
                                     
@@ -457,7 +461,9 @@
                             
                             <div class="filters__value">
                                 <div class="filters__value-half">
+                                    <div class="filters__input-inner">
                                     <input class="filters__input filters__input-from" type="text" name="year-from" placeholder="Год от">
+                                    </div>
 
                                     <div class="filters__checkbox">
 
@@ -481,7 +487,9 @@
 
                                     <div class="filters__input-line"></div>
 
+                                    <div class="filters__input-inner">
                                     <input class="filters__input filters__input-to" type="text" name="year-to" placeholder="до">
+                                    </div>
 
                                     <div class="filters__checkbox">
 
@@ -512,7 +520,9 @@
                             
                             <div class="filters__value">
                                 <div class="filters__value-half">
+                                    <div class="filters__input-inner">
                                     <input class="filters__input filters__input-from" type="text" name="distance-from" placeholder="Пробег от">
+                                    </div>
 
                                     <div class="filters__checkbox">
 
@@ -536,7 +546,9 @@
 
                                     <div class="filters__input-line"></div>
 
+                                    <div class="filters__input-inner">
                                     <input class="filters__input filters__input-to" type="text" name="distance-to" placeholder="до">
+                                    </div>
 
                                     <div class="filters__checkbox">
 
@@ -566,7 +578,9 @@
                         <div class="filters__bodytype">
                             
                             <div class="filters__value">
+                                <div class="filters__input-inner">
                                 <input class="filters__input" type="text" name="bodytype" placeholder="Кузов">
+                                </div>
                                 
                                 <div class="filters__checkbox">
 
@@ -594,7 +608,9 @@
                         <div class="filters__transmission">
                             
                             <div class="filters__value">
+                                <div class="filters__input-inner">
                                 <input class="filters__input" type="text" name="transmission" placeholder="Коробка передач">
+                                </div>
 
                                 <div class="filters__checkbox">
 
@@ -622,7 +638,9 @@
                         <div class="filters__engine">
                             
                             <div class="filters__value">
+                                <div class="filters__input-inner">
                                 <input class="filters__input" type="text" name="engine" placeholder="Двигатель">
+                                </div>
 
                                 <div class="filters__checkbox">
 
@@ -651,7 +669,9 @@
                             
                             <div class="filters__value">
                                 <div class="filters__value-half">
-                                    <input class="filters__input filters__input-from" type="text" name="volume-from" placeholder="Объем от">
+                                    <div class="filters__input-inner">
+                                        <input class="filters__input filters__input-from" type="text" name="volume-from" placeholder="Объем от">
+                                    </div>
 
                                     <div class="filters__checkbox">
 
@@ -675,8 +695,9 @@
 
                                     <div class="filters__input-line"></div>
 
-                                    <input class="filters__input filters__input-to" type="text" name="volume-to" placeholder="до">
-                                    
+                                    <div class="filters__input-inner">
+                                        <input class="filters__input filters__input-to" type="text" name="volume-to" placeholder="до">
+                                    </div>
                                     <div class="filters__checkbox">
 
                                         <div class="filters__checkbox-inner">    
@@ -705,8 +726,10 @@
                         <div class="filters__drive">
                             
                             <div class="filters__value">
-                                <input class="filters__input" type="text" name="drive" placeholder="Привод">
-                                
+                                <div class="filters__input-inner">
+                                    <input class="filters__input" type="text" name="drive" placeholder="Привод">
+                                </div>
+
                                 <div class="filters__checkbox">
 
                                         <div class="filters__checkbox-inner">    
@@ -734,8 +757,10 @@
                             
                             <div class="filters__value">
                                 <div class="filters__value-half">
-                                    <input class="filters__input filters__input-from" type="text" name="price-from" placeholder="Цена от">
-                                    
+                                    <div class="filters__input-inner">
+                                        <input class="filters__input filters__input-from" type="text" name="price-from" placeholder="Цена от">
+                                    </div>
+
                                     <div class="filters__checkbox">
 
                                         <div class="filters__checkbox-inner">    
@@ -758,7 +783,9 @@
 
                                     <div class="filters__input-line"></div>
 
-                                    <input class="filters__input filters__input-to" type="text" name="price-to" placeholder="до">
+                                    <div class="filters__input-inner">
+                                        <input class="filters__input filters__input-to" type="text" name="price-to" placeholder="до">
+                                    </div>
 
                                     <div class="filters__checkbox">
 
@@ -843,32 +870,138 @@
                             
                             <h3 class="cars__item-name title-h3">
                                 <a href="./pages/card.html" class="cars__item-link">
-                                    <span class="cars__name">Kia K5</span> <span>—</span>
-                                    <span class="cars__year">2020</span>
+                                    <span class="cars__name name">Kia K5</span> <span>—</span>
+                                    <span class="cars__year year">2020</span>
                                 </a>
                             </h3>
                             <div class="cars__row">
                                 <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
-                                <p class="distans">122 000 км,</p>
+                                <p class="cars__distans distans">122 000 км,</p>
                                 &nbsp;
-                                <p class="cars__body">Седан</p>
+                                <p class="cars__body body-type">Седан</p>
                             </div>
                             <div class="cars__row">
                                 <img class="cars__svg" src="./assets/icon/gas.svg" alt="gas station icon">
                                 <div class="cars__info">
-                                    <p class="cars__info-cell cars__engine-volume">2.0 л</p>
+                                    <p class="cars__info-cell cars__engine-volume engine-volume">2.0 л</p>
                                     &nbsp;
-                                    <p class="cars__info-cell cars__engine-power">150 л.c.</p>
+                                    <p class="cars__info-cell cars__engine-power engine-power">150 л.c.</p>
                                     &nbsp;
-                                    <p class="cars__info-cell cars__engine-fuel">бензин</p>
+                                    <p class="cars__info-cell cars__engine-fuel engine-fuel">бензин</p>
                                     &nbsp;
-                                    <p class="cars__info-cell cars__transmission">автоматическая</p>
+                                    <p class="cars__info-cell cars__transmission transmission-type">автоматическая</p>
                                     &nbsp;
-                                    <p class="cars__info-cell cars__drive">передний привод</p>
+                                    <p class="cars__info-cell cars__drive drive-type">передний привод</p>
                                 </div>
                             </div>
                             <div class="cars__price">
-                                <p class="cars__cost">1 990 000</p>
+                                <p class="cars__cost price">1 990 000</p>
+                                <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
+                            </div>
+                            
+                            
+                            <button class="cars__button btn2 gopop2" type="button" aria-label="Записаться">
+                                <span class="button__text">Оставить заявку</span>
+                            </button>
+                        </li>
+
+                        <li class="cars__item">
+                            
+                            <div class="cars__foto">
+                                <div class="cars__slider">
+                                    <div class="cars__slider-page">
+                                        <div class="cars__slider-inner">
+                                            <a href="./pages/card.html" class="cars__slider-link">
+                                                <img class="cars__img" src="./assets/img/slider-1.png" alt="car">
+                                            </a>
+                                        </div>
+                                        <div class="cars__slider-button"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <h3 class="cars__item-name title-h3">
+                                <a href="./pages/card.html" class="cars__item-link">
+                                    <span class="cars__name name">Kia K5</span> <span>—</span>
+                                    <span class="cars__year year">2020</span>
+                                </a>
+                            </h3>
+                            <div class="cars__row">
+                                <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
+                                <p class="cars__distans distans">122 000 км,</p>
+                                &nbsp;
+                                <p class="cars__body body-type">Седан</p>
+                            </div>
+                            <div class="cars__row">
+                                <img class="cars__svg" src="./assets/icon/gas.svg" alt="gas station icon">
+                                <div class="cars__info">
+                                    <p class="cars__info-cell cars__engine-volume engine-volume">2.0 л</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__engine-power engine-power">150 л.c.</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__engine-fuel engine-fuel">бензин</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__transmission transmission-type">автоматическая</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__drive drive-type">передний привод</p>
+                                </div>
+                            </div>
+                            <div class="cars__price">
+                                <p class="cars__cost price">1 990 000</p>
+                                <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
+                            </div>
+                            
+                            
+                            <button class="cars__button btn2 gopop2" type="button" aria-label="Записаться">
+                                <span class="button__text">Оставить заявку</span>
+                            </button>
+                        </li>
+
+                        <li class="cars__item">
+                            
+                            <div class="cars__foto">
+                                <div class="cars__slider">
+                                    <div class="cars__slider-page">
+                                        <div class="cars__slider-inner">
+                                            <a href="./pages/card.html" class="cars__slider-link">
+                                                <img class="cars__img" src="./assets/img/slider-1.png" alt="car">
+                                            </a>
+                                        </div>
+                                        <div class="cars__slider-button"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <h3 class="cars__item-name title-h3">
+                                <a href="./pages/card.html" class="cars__item-link">
+                                    <span class="cars__name name">Kia K5</span> <span>—</span>
+                                    <span class="cars__year year">2020</span>
+                                </a>
+                            </h3>
+                            <div class="cars__row">
+                                <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
+                                <p class="cars__distans distans">122 000 км,</p>
+                                &nbsp;
+                                <p class="cars__body body-type">Седан</p>
+                            </div>
+                            <div class="cars__row">
+                                <img class="cars__svg" src="./assets/icon/gas.svg" alt="gas station icon">
+                                <div class="cars__info">
+                                    <p class="cars__info-cell cars__engine-volume engine-volume">2.0 л</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__engine-power engine-power">150 л.c.</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__engine-fuel engine-fuel">бензин</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__transmission transmission-type">автоматическая</p>
+                                    &nbsp;
+                                    <p class="cars__info-cell cars__drive drive-type">передний привод</p>
+                                </div>
+                            </div>
+                            <div class="cars__price">
+                                <p class="cars__cost price">1 990 000</p>
                                 <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
                             </div>
                             
@@ -989,49 +1122,52 @@
 
                             <div class="stock__item">
 
-                                <div class="cars__slider">
-                                    <div class="cars__slider-page">
-                                        <div class="cars__slider-inner">
-                                            <a href="./pages/card.html" class="cars__slider-link">
-                                                <img class="cars__img" src="./assets/img/car.png" alt="car">
-                                            </a>
+                                <div class="cars__foto">
+                                    <div class="cars__slider">
+                                        <div class="cars__slider-page">
+                                            <div class="cars__slider-inner">
+                                                <a href="./pages/card.html" class="cars__slider-link">
+                                                    <img class="cars__img" src="./assets/img/slider-1.png" alt="car">
+                                                </a>
+                                            </div>
+                                            <div class="cars__slider-button"></div>
                                         </div>
-                                        <div class="cars__slider-button"></div>
+                                        
                                     </div>
-                                    
                                 </div>
                                 
-                                <a href="./pages/card.html" class="cars__item-link">
-                                    <h3 class="cars__item-name title-h3">
-                                        <span class="cars__name">Kia K5</span> <span>—</span>
-                                        <span class="cars__year">2020</span>
-                                    </h3>
-                                </a>
-                                
+                                <h3 class="cars__item-name title-h3">
+                                    <a href="./pages/card.html" class="cars__item-link">
+                                        <span class="cars__name name">Kia K5</span> <span>—</span>
+                                        <span class="cars__year year">2020</span>
+                                    </a>
+                                </h3>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
-                                    <p class="distans">122 000 км,</p>
+                                    <p class="cars__distans distans">122 000 км,</p>
                                     &nbsp;
-                                    <p class="cars__body">Седан</p>
+                                    <p class="cars__body body-type">Седан</p>
                                 </div>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/gas.svg" alt="gas station icon">
                                     <div class="cars__info">
-                                        <p class="cars__info-cell cars__engine-volume">2.0 л</p>
+                                        <p class="cars__info-cell cars__engine-volume engine-volume">2.0 л</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-power">150 л.c.</p>
+                                        <p class="cars__info-cell cars__engine-power engine-power">150 л.c.</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-fuel">бензин</p>
+                                        <p class="cars__info-cell cars__engine-fuel engine-fuel">бензин</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__transmission">автоматическая</p>
+                                        <p class="cars__info-cell cars__transmission transmission-type">автоматическая</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__drive">передний привод</p>
+                                        <p class="cars__info-cell cars__drive drive-type">передний привод</p>
                                     </div>
                                 </div>
                                 <div class="cars__price">
-                                    <p class="cars__cost">1 990 000</p>
+                                    <p class="cars__cost price">1 990 000</p>
                                     <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
                                 </div>
+                                
+                                
                                 <button class="cars__button btn2 gopop2" type="button" aria-label="Записаться">
                                     <span class="button__text">Оставить заявку</span>
                                 </button>
@@ -1039,49 +1175,52 @@
 
                             <div class="stock__item">
 
-                                <div class="cars__slider">
-                                    <div class="cars__slider-page">
-                                        <div class="cars__slider-inner">
-                                            <a href="./pages/card.html" class="cars__slider-link">
-                                                <img class="cars__img" src="./assets/img/car.png" alt="car">
-                                            </a>
+                                <div class="cars__foto">
+                                    <div class="cars__slider">
+                                        <div class="cars__slider-page">
+                                            <div class="cars__slider-inner">
+                                                <a href="./pages/card.html" class="cars__slider-link">
+                                                    <img class="cars__img" src="./assets/img/slider-1.png" alt="car">
+                                                </a>
+                                            </div>
+                                            <div class="cars__slider-button"></div>
                                         </div>
-                                        <div class="cars__slider-button"></div>
+                                        
                                     </div>
-                                    
                                 </div>
                                 
-                                <a href="./pages/card.html" class="cars__item-link">
-                                    <h3 class="cars__item-name title-h3">
-                                        <span class="cars__name">Kia K5</span> <span>—</span>
-                                        <span class="cars__year">2020</span>
-                                    </h3>
-                                </a>
-                                
+                                <h3 class="cars__item-name title-h3">
+                                    <a href="./pages/card.html" class="cars__item-link">
+                                        <span class="cars__name name">Kia K5</span> <span>—</span>
+                                        <span class="cars__year year">2020</span>
+                                    </a>
+                                </h3>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
-                                    <p class="distans">122 000 км,</p>
+                                    <p class="cars__distans distans">122 000 км,</p>
                                     &nbsp;
-                                    <p class="cars__body">Седан</p>
+                                    <p class="cars__body body-type">Седан</p>
                                 </div>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/gas.svg" alt="gas station icon">
                                     <div class="cars__info">
-                                        <p class="cars__info-cell cars__engine-volume">2.0 л</p>
+                                        <p class="cars__info-cell cars__engine-volume engine-volume">2.0 л</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-power">150 л.c.</p>
+                                        <p class="cars__info-cell cars__engine-power engine-power">150 л.c.</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-fuel">бензин</p>
+                                        <p class="cars__info-cell cars__engine-fuel engine-fuel">бензин</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__transmission">автоматическая</p>
+                                        <p class="cars__info-cell cars__transmission transmission-type">автоматическая</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__drive">передний привод</p>
+                                        <p class="cars__info-cell cars__drive drive-type">передний привод</p>
                                     </div>
                                 </div>
                                 <div class="cars__price">
-                                    <p class="cars__cost">1 990 000</p>
+                                    <p class="cars__cost price">1 990 000</p>
                                     <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
                                 </div>
+                                
+                                
                                 <button class="cars__button btn2 gopop2" type="button" aria-label="Записаться">
                                     <span class="button__text">Оставить заявку</span>
                                 </button>
@@ -1089,49 +1228,52 @@
 
                             <div class="stock__item">
 
-                                <div class="cars__slider">
-                                    <div class="cars__slider-page">
-                                        <div class="cars__slider-inner">
-                                            <a href="./pages/card.html" class="cars__slider-link">
-                                                <img class="cars__img" src="./assets/img/car.png" alt="car">
-                                            </a>
+                                <div class="cars__foto">
+                                    <div class="cars__slider">
+                                        <div class="cars__slider-page">
+                                            <div class="cars__slider-inner">
+                                                <a href="./pages/card.html" class="cars__slider-link">
+                                                    <img class="cars__img" src="./assets/img/slider-1.png" alt="car">
+                                                </a>
+                                            </div>
+                                            <div class="cars__slider-button"></div>
                                         </div>
-                                        <div class="cars__slider-button"></div>
+                                        
                                     </div>
-                                    
                                 </div>
                                 
-                                <a href="./pages/card.html" class="cars__item-link">
-                                    <h3 class="cars__item-name title-h3">
-                                        <span class="cars__name">Kia K5</span> <span>—</span>
-                                        <span class="cars__year">2020</span>
-                                    </h3>
-                                </a>
-                                
+                                <h3 class="cars__item-name title-h3">
+                                    <a href="./pages/card.html" class="cars__item-link">
+                                        <span class="cars__name name">Kia K5</span> <span>—</span>
+                                        <span class="cars__year year">2020</span>
+                                    </a>
+                                </h3>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
-                                    <p class="distans">122 000 км,</p>
+                                    <p class="cars__distans distans">122 000 км,</p>
                                     &nbsp;
-                                    <p class="cars__body">Седан</p>
+                                    <p class="cars__body body-type">Седан</p>
                                 </div>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/gas.svg" alt="gas station icon">
                                     <div class="cars__info">
-                                        <p class="cars__info-cell cars__engine-volume">2.0 л</p>
+                                        <p class="cars__info-cell cars__engine-volume engine-volume">2.0 л</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-power">150 л.c.</p>
+                                        <p class="cars__info-cell cars__engine-power engine-power">150 л.c.</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-fuel">бензин</p>
+                                        <p class="cars__info-cell cars__engine-fuel engine-fuel">бензин</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__transmission">автоматическая</p>
+                                        <p class="cars__info-cell cars__transmission transmission-type">автоматическая</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__drive">передний привод</p>
+                                        <p class="cars__info-cell cars__drive drive-type">передний привод</p>
                                     </div>
                                 </div>
                                 <div class="cars__price">
-                                    <p class="cars__cost">1 990 000</p>
+                                    <p class="cars__cost price">1 990 000</p>
                                     <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
                                 </div>
+                                
+                                
                                 <button class="cars__button btn2 gopop2" type="button" aria-label="Записаться">
                                     <span class="button__text">Оставить заявку</span>
                                 </button>
@@ -1139,49 +1281,52 @@
 
                             <div class="stock__item">
 
-                                <div class="cars__slider">
-                                    <div class="cars__slider-page">
-                                        <div class="cars__slider-inner">
-                                            <a href="./pages/card.html" class="cars__slider-link">
-                                                <img class="cars__img" src="./assets/img/car.png" alt="car">
-                                            </a>
+                                <div class="cars__foto">
+                                    <div class="cars__slider">
+                                        <div class="cars__slider-page">
+                                            <div class="cars__slider-inner">
+                                                <a href="./pages/card.html" class="cars__slider-link">
+                                                    <img class="cars__img" src="./assets/img/slider-1.png" alt="car">
+                                                </a>
+                                            </div>
+                                            <div class="cars__slider-button"></div>
                                         </div>
-                                        <div class="cars__slider-button"></div>
+                                        
                                     </div>
-                                    
                                 </div>
                                 
-                                <a href="./pages/card.html" class="cars__item-link">
-                                    <h3 class="cars__item-name title-h3">
-                                        <span class="cars__name">Kia K5</span> <span>—</span>
-                                        <span class="cars__year">2020</span>
-                                    </h3>
-                                </a>
-                                
+                                <h3 class="cars__item-name title-h3">
+                                    <a href="./pages/card.html" class="cars__item-link">
+                                        <span class="cars__name name">Kia K5</span> <span>—</span>
+                                        <span class="cars__year year">2020</span>
+                                    </a>
+                                </h3>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/speedometr.svg" alt="speedometr icon">
-                                    <p class="distans">122 000 км,</p>
+                                    <p class="cars__distans distans">122 000 км,</p>
                                     &nbsp;
-                                    <p class="cars__body">Седан</p>
+                                    <p class="cars__body body-type">Седан</p>
                                 </div>
                                 <div class="cars__row">
                                     <img class="cars__svg" src="./assets/icon/gas.svg" alt="gas station icon">
                                     <div class="cars__info">
-                                        <p class="cars__info-cell cars__engine-volume">2.0 л</p>
+                                        <p class="cars__info-cell cars__engine-volume engine-volume">2.0 л</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-power">150 л.c.</p>
+                                        <p class="cars__info-cell cars__engine-power engine-power">150 л.c.</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__engine-fuel">бензин</p>
+                                        <p class="cars__info-cell cars__engine-fuel engine-fuel">бензин</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__transmission">автоматическая</p>
+                                        <p class="cars__info-cell cars__transmission transmission-type">автоматическая</p>
                                         &nbsp;
-                                        <p class="cars__info-cell cars__drive">передний привод</p>
+                                        <p class="cars__info-cell cars__drive drive-type">передний привод</p>
                                     </div>
                                 </div>
                                 <div class="cars__price">
-                                    <p class="cars__cost">1 990 000</p>
+                                    <p class="cars__cost price">1 990 000</p>
                                     <img class="cars__svg-ruble" src="./assets/icon/icon-ruble.svg" alt="icon ruble">
                                 </div>
+                                
+                                
                                 <button class="cars__button btn2 gopop2" type="button" aria-label="Записаться">
                                     <span class="button__text">Оставить заявку</span>
                                 </button>
