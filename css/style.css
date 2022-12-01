@@ -476,7 +476,7 @@ table {
 --------------------------------------------- */
 
 a:focus {
-	outline: thin dotted;
+	outline: none;
 }
 
 a:hover,
@@ -1387,9 +1387,9 @@ body {
 	transition: opacity 0.3s ease;
 }
 
-.filters__value:hover .filters__checkbox {
+/* .filters__value:hover .filters__checkbox {
 	display: block;
-}
+} */
 
 .input__checkbox-custom {
 	position: absolute;
@@ -3347,26 +3347,19 @@ input::-webkit-input-placeholder {
 
 .modal__overlay.active {
 	z-index: 1000;
-  display: flex;
-  flex: 0 1 auto;
+	position: fixed;
+  display: block;
   height: 100%;
-  top: 0;
-  position: fixed;
-  will-change: transform;
   width: 100%;
+  top: 0;
   left: 0;
   right: 0;
 	bottom: 0;
   background: #585858e3;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
   transition: all 0.3s ease-out;
 }
 
 .modal__form {
-	display: none;
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -3376,12 +3369,8 @@ input::-webkit-input-placeholder {
 	font-size: 15px;
 	line-height: 167%;
 	color: #05141F;
-	max-height:100%;
+	height:100%;
 	overflow-y:scroll;
-}
-
-.modal__form-credit.active, .modal__form-trade-in.active, .modal__form-insurance.active, .modal__form-buy.active {
-	display: block;
 }
 
 .modal__container {

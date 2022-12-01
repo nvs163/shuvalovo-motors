@@ -430,3 +430,26 @@ jQuery(function() {
   ymap();
  
 });
+
+
+// checkbox
+
+let openCheckbox = document.querySelector(".filters__input-inner");
+let closeCheckbox = document.querySelector(".filters");
+let filtersInner = document.querySelector(".filters__inner");
+let checkbox = document.querySelector(".filters__checkbox");
+
+openCheckbox.addEventListener("click", function(e) {
+  e.preventDefault();
+  checkbox.classList.add("active");
+})
+
+// closeCheckbox.addEventListener("click", () => {
+//   checkbox.classList.remove("active");
+// })
+
+window.onclick = function(event) {
+  if (event.target == filtersInner) {
+    checkbox.classList.remove("active");
+  }
+}

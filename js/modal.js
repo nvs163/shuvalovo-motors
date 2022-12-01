@@ -1,87 +1,44 @@
 // modal
-var gomodaloverlay = document.querySelectorAll('.gomodaloverlay');
-var gomodaltradein = document.querySelectorAll('.gomodaltradein');
-var gomodalinsurance = document.querySelectorAll('.gomodalinsurance');
-var gomodalcredit = document.querySelectorAll('.gomodalcredit');
-var gomodalbuy = document.querySelectorAll('.gomodalbuy');
+let modal = document.querySelector(".modal__pop-up")
 
-var modaloverlay  =  document.getElementsByClassName("modal__overlay")[0];
+let gomodaloverlay = document.querySelector(".gomodaloverlay");
+let gomodaltradein = document.querySelector(".gomodaltradein");
+let gomodalinsurance = document.querySelector(".gomodalinsurance");
+let gomodalcredit = document.querySelector(".gomodalcredit");
+let gomodalbuy = document.querySelector(".gomodalbuy");
 
-var modaltradein  =  document.getElementsByClassName("modal__form-trade-in")[0];
-var modalinsurance  =  document.getElementsByClassName("modal__form-insurance")[0];
-var modalcredit  =  document.getElementsByClassName("modal__form-credit")[0];
-var modalbuy  =  document.getElementsByClassName("modal__form-buy")[0];
+let modaloverlay  =  document.querySelector(".modal__overlay");
 
-
-var closemodal1  =  document.getElementById("closemodal1");
-var closemodal2  =  document.getElementById("closemodal2");
-var closemodal3  =  document.getElementById("closemodal3");
-var closemodal4  =  document.getElementById("closemodal4");
+let modaltradein  =  document.querySelector(".modal__form-trade-in");
+let modalinsurance  =  document.querySelector(".modal__form-insurance");
+let modalcredit  =  document.querySelector(".modal__form-credit");
+let modalbuy  =  document.querySelector(".modal__form-buy");
 
 
-closemodal1.addEventListener("click", closeModalTradein, false);
-closemodal2.addEventListener("click", closeModalInsurance, false);
-closemodal3.addEventListener("click", closeModalCredit, false);
-closemodal4.addEventListener("click", closeModalBuy, false);
+let closeModal = document.querySelector(".modal__close-btn");
 
 
-
-for (var i = 0; i < modaltradein.length; i++) {
-  modaltradein[i].addEventListener("click", openModalTradein, false);
-}
-for (var i = 0; i < modalinsurance.length; i++) {
-  modalinsurance[i].addEventListener("click", openModalInsurance, false);
-}
-for (var i = 0; i < modalcredit.length; i++) {
-  modalcredit[i].addEventListener("click", openModalCredit, false);
-}
-for (var i = 0; i < modalbuy.length; i++) {
-  modalbuy[i].addEventListener("click", openModalBuy, false);
-}
-
-
-function openModalTradein(){
+gomodaltradein.addEventListener("click", function(e) {
+  e.preventDefault();
   modaloverlay.classList.add("active");
-  setTimeout(function() { 
-    modaltradein.classList.add("active");
-  }, 100);
-}
-function openModalInsurance(){
+})
+
+gomodalinsurance.addEventListener("click", function(e) {
+  e.preventDefault();
   modaloverlay.classList.add("active");
-  setTimeout(function() { 
-    modalinsurance.classList.add("active");
-  }, 100);
-}
-function openModalCredit(){
+})
+
+gomodalcredit.addEventListener("click", function(e) {
+  e.preventDefault();
   modaloverlay.classList.add("active");
-  setTimeout(function() { 
-    modalcredit.classList.add("active");
-  }, 100);
-}
-function openModalBuy(){
+})
+
+gomodalbuy.addEventListener("click", function(e) {
+  e.preventDefault();
   modaloverlay.classList.add("active");
-  setTimeout(function() { 
-    modalbuy.classList.add("active");
-  }, 100);
-}
+})
 
 
-function closeModalTradein(){
+closeModal.addEventListener("click", () => {
   modaloverlay.classList.remove("active");
-  modaltradein.classList.remove("active");
-}
-
-function closeModalInsurance(){
-  modaloverlay.classList.remove("active");
-  modalinsurance.classList.remove("active");
-}
-
-function closeModalCredit(){
-  modaloverlay.classList.remove("active");
-  modalcredit.classList.remove("active");
-}
-
-function closeModalBuy(){
-  modaloverlay.classList.remove("active");
-  modalbuy.classList.remove("active");
-}
+});
